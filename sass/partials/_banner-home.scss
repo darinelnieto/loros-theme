@@ -1,0 +1,25 @@
+.banner-home-partial-e4327c {
+    padding-top: 6rem;
+    .banner-home{
+        opacity: 0;
+        .owl-dots{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 2rem;
+            width: 100%;
+            .owl-dot{
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background: #ffffff;
+                margin: 0 10px;
+            }
+            .owl-dot.active{
+                width: 17px;
+                height: 17px;
+            }
+        }
+    }
+}

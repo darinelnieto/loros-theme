@@ -1,0 +1,158 @@
+/*=================Fuentes=================*/
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('../Fonts/Gotham-Book.woff2') format('woff2'),
+        url('../Fonts/Gotham-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gotham-Black';
+    src: url('../Fonts/Gotham-Black.woff2') format('woff2'),
+        url('../Fonts/Gotham-Black.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gotham-regular';
+    src: url('../Fonts/Gotham-regular.woff2') format('woff2'),
+        url('../Fonts/Gotham-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir-light';
+    src: url('../Fonts/Avenir-Light.woff2') format('woff2'),
+        url('../Fonts/Avenir-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir-medium';
+    src: url('../Fonts/Avenir-Medium.woff2') format('woff2'),
+        url('../Fonts/Avenir-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+/*=================End Fuentes=================*/
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+    background: white;
+}
+body{
+    .container{
+        max-width: 1280px;
+    }
+}
+/*===================Header==================*/
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 80;
+}
+/*=================Footer===================*/
+footer{
+    background: #082808;
+    padding: 3rem 0;
+    .menu-menu-1-container{
+        text-align: right;
+        ul{
+            list-style: none;
+            padding: 0 13% 0 0;
+            margin: 0;
+            li{
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-family: 'Gotham Book';
+                    transition: .2s;
+                    font-size: 1.3rem;
+                    &:hover{
+                        color: #AAAA1B;
+                    }
+                }
+                a.active{
+                    color: #AAAA1B;
+                }
+            }
+            @media(max-width:768px){
+                text-align: center;
+                padding: 0;
+            }
+        }
+    }
+    .contact{
+        padding-left: 9%;
+        position: relative;
+        &::before{
+            content: '';
+            width: 2px;
+            height: 100px;
+            background: white;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        h2{
+            color: #AAAA1B;
+            font-size: 2.1rem;
+            font-family: 'Gotham-Black';
+            border-bottom: 2px solid;
+            max-width: fit-content;
+            @media(max-width:768px){
+                margin: 0 auto 2rem auto;
+            }
+        }
+        .social-networks{
+            a{
+                font-size: 3rem;
+                text-decoration: none;
+                margin-right: 1.4rem;
+                color: white;
+                font-family: 'Gotham-Black';
+            }
+        }
+        .email-content{
+            a{
+                color: white;
+                font-family: 'Avenir-medium';
+                font-size: 2rem;
+                text-decoration: none;
+            }
+        }
+        @media(max-width:768px){
+            text-align: center;
+            margin: 2rem 0;
+            padding: 0;
+            &::before{
+                display: none;
+            }
+            .social-networks{
+                a{
+                    margin: 0 .5rem;
+                }
+            }
+        }
+        @media(max-width:1079px){
+            .email-content{
+                a{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+    .col-md-2{
+        @media(max-width:768px){
+            text-align: center;
+        }
+    }
+}

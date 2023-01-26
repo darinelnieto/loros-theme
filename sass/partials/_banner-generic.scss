@@ -1,0 +1,22 @@
+.banner-generic-partial-13237e {
+    background: white;
+    padding-top: 11rem;
+    margin-bottom: 3rem;
+    .container{
+        max-width: 1150px;
+        .generic-banner{
+            .owl-dots{
+                display: flex;
+                justify-content: center;
+                margin-top: 2.5rem;
+                .owl-dot{
+                    width: 10px;
+                    height: 10px;
+                    background: #082808;
+                    border-radius: 50%;
+                    margin: 0 4px;
+                }
+            }
+        }
+    }
+}

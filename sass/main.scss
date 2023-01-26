@@ -1,0 +1,18 @@
+@import 'default_theme';
+
+// Ditto include zone (don't delete anything below)
+// #DittoPartials
+@import "./partials/banner-generic";
+@import "./partials/experiences";
+@import "./partials/forest-nursery";
+@import "./partials/regenerative-agriculture";
+@import "./partials/about-us";
+@import "./partials/banner-home";
+@import "./partials/content-header";
+@import "partials/hello";
+// #DittoTemplates
+@import "./templates/archive-experiences-template";
+@import "./templates/experiences-template";
+@import "./templates/general-template";
+@import "./templates/about-us-page-template";
+@import "./templates/home-template";

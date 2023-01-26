@@ -1,0 +1,64 @@
+#archive-experiences-template-dc1f40 {
+    padding-top: 10rem;
+    padding-bottom: 4.5rem;
+    background: rgba(209, 209, 209, .4);
+    h1{
+        color: #082808;
+        font-family: 'Gotham-Black';
+        border-bottom: 1px solid;
+        max-width: 300px;
+        margin: 0 auto;
+        padding-bottom: 0.4rem;
+    }
+    .container{
+        max-width: 1140px;
+        .experience{
+            padding: 0 1.5rem;
+            margin-bottom: 3rem;
+            a{
+                text-decoration: none;
+                .card-experience{
+                    border-radius: 25px 25px 0 0;
+                    box-shadow: 0 0 17px -2px #999;
+                    max-width: 332px;
+                    margin: 0 auto;
+                    .content-image{
+                        max-width: 332px;
+                        margin: 0 auto;
+                        img{
+                            width: 100%;
+                            height: 340px;
+                            object-fit: cover;
+                            border-radius: 25px 25px 0 0;
+                        }
+                    }
+                    .name{
+                        background: white;
+                        text-align: center;
+                        min-height: 112px;
+                        position: relative;
+                        max-width: 332px;
+                        transition: .2s;
+                        margin: 0 auto;
+                        h3{
+                            line-height: 1;
+                            color: #082808;
+                            font-family: 'Gotham-Black';
+                            padding: 1.5rem;
+                            position: absolute;
+                            width: 100%;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+                &:hover{
+                    .name{
+                        background: #E0DC65;
+                    }
+                }
+            }
+        }
+    }
+}

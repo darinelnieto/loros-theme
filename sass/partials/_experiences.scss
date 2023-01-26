@@ -1,0 +1,136 @@
+.experiences-partial-d7c3f3 {
+    background: rgba(173, 173,173, .3);
+    padding: 4rem 0 3rem 0;
+    .container{
+        max-width: 1200px;
+        h2{
+            font-family: 'Gotham-Black';
+            color: #797D23;
+            max-width: 370px;
+            margin: 0 auto 3rem auto;
+            padding-bottom: 0.5rem;
+            font-size: 3.1rem;
+            border-bottom: 3px solid #797D23;
+        }
+        .experiences{
+            .owl-item{
+                padding: 1.5rem;
+                .experience{
+                    height: 300px;
+                    width: 100%;
+                    overflow: hidden;
+                    position: relative;
+                    a{
+                        text-decoration: none;
+                        img{
+                            width: 100%;
+                            height: 300px;
+                            object-fit: cover;
+                        }
+                        .name{
+                            background: rgba(8, 40, 8, .888);
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            z-index: 20;
+                            transition: .2s;
+                            h3{
+                                font-family: 'Gotham-Black';
+                                color: white;
+                                position: absolute;
+                                z-index: 30;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                transition: .3s;
+                            }
+                        }
+                    }
+                    &:hover{
+                        a{
+                            h3{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                @media(max-width:640px){
+                    padding: 0 6rem;
+                }
+            }
+            .owl-item:nth-child(2n){
+                .experience{
+                    .name{
+                        right: 100%;
+                    }
+                    &:hover{
+                        .name{
+                            right: 0;
+                        }
+                    }
+                }
+            }
+            .owl-item:nth-child(2n+1){
+                .experience{
+                    .name{
+                        left: 100%;
+                    }
+                    &:hover{
+                        .name{
+                            left: 0;
+                        }
+                    }
+                }
+            }
+            .owl-nav{
+                .owl-prev{
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    background: #797D23;
+                    color: white;
+                    font-size: 2rem;
+                    position: relative;
+                    position: absolute;
+                    top: 50%;
+                    left: -6%;
+                    transform: translateY(-50%);
+                    span{
+                        position: absolute;
+                        left: 46%;
+                        top: 35%;
+                        transform: translate(-50%, -51%);
+                    }
+                    @media(max-width:768px){
+                        left: -1%;
+                    }
+                }
+                .owl-next{
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    background: #797D23;
+                    color: white;
+                    font-size: 2rem;
+                    position: absolute;
+                    top: 50%;
+                    right: -6%;
+                    transform: translateY(-50%);
+                    span{
+                        position: absolute;
+                        left: 53%;
+                        top: 35%;
+                        transform: translate(-50%, -52%);
+                    }
+                    @media(max-width:768px){
+                        right: -1%;
+                    }
+                }
+            }
+            .disabled{
+                display: none;
+            }
+        }
+    }
+}

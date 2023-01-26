@@ -1,0 +1,101 @@
+#about-us-page-template-e82d05 {
+    .content-welcome{
+        background: #797D23;
+        display: flex;
+        align-items: center;
+        .content-image{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+        }
+        .content-text{
+            width: 50%;
+            padding: 0 3rem;
+            text-align: center;
+            h2{
+                color: white;
+                font-family: 'Gotham-Black';
+                font-size: 5rem;
+                line-height: .8;
+                text-align: left;
+                width: fit-content;
+                margin: 0 auto 2rem auto;
+                span{
+                    font-size: 2.5rem;
+                    padding-left: 12.5%;
+                }
+            }
+            p{
+                font-family: 'Avenir-light';
+                color: white;
+                font-size: 1.7rem;
+                line-height: 1.2;
+            }
+            a{
+                background: white;
+                padding: 5px 10px;
+                font-family: 'Gotham-regular';
+                text-decoration: none;
+                color: #082808;
+                font-size: 1.4rem;
+            }
+            @media(max-width:640px){
+                h2{
+                    font-size: 3.5rem;
+                    span{
+                        font-size: 2rem;
+                    }
+                }
+                p {
+                    font-size: 1.5rem !important;
+                }
+                a{
+                    font-size: 1.2rem;
+                }
+            }
+            @media screen and (min-width:768px) and (max-width:1014px){
+                h2{
+                    font-size: 2.8rem;
+                    span{
+                        font-size: 1.6rem;
+                    }
+                }
+                p{
+                    font-size: 1rem;
+                }
+                a{
+                    font-size: 1rem;
+                }
+            }
+            @media screen and (min-width:1015px) and (max-width:1217px){
+                h2{
+                    font-size: 4rem;
+                    span{
+                        font-size: 2.2rem;
+                    }
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        @media(max-width:767px){
+            flex-direction: column-reverse;
+            .content-image{
+                width: 100%;
+            }
+            .content-text{
+                width: 100%;
+                padding: 3rem 1rem;
+                h2{
+                    width: fit-content;
+                    margin: 0 auto 3rem auto;
+                }
+                p{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
