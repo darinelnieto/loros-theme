@@ -353,6 +353,7 @@ footer .contact .email-content a {
 @media (max-width: 500px) {
   .forest-nursery-partial-9192c8 .content-texts h2 {
     font-size: 3.2rem;
+    line-height: 0.8;
   }
   .forest-nursery-partial-9192c8 .content-texts h2 span {
     font-size: 2.5rem;
