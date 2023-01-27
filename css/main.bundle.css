@@ -247,7 +247,7 @@ footer .contact .email-content a {
   border-radius: 50%;
   background: #797D23;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: relative;
   position: absolute;
   top: 50%;
@@ -256,8 +256,8 @@ footer .contact .email-content a {
 }
 .experiences-partial-d7c3f3 .container .experiences .owl-nav .owl-prev span {
   position: absolute;
-  left: 53%;
-  top: 35%;
+  left: 46%;
+  top: 38%;
   transform: translate(-50%, -50%);
 }
 @media (max-width: 768px) {
@@ -271,7 +271,7 @@ footer .contact .email-content a {
   border-radius: 50%;
   background: #797D23;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: absolute;
   top: 50%;
   right: -6%;
@@ -280,7 +280,7 @@ footer .contact .email-content a {
 .experiences-partial-d7c3f3 .container .experiences .owl-nav .owl-next span {
   position: absolute;
   left: 53%;
-  top: 35%;
+  top: 38%;
   transform: translate(-50%, -50%);
 }
 @media (max-width: 768px) {

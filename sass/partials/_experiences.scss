@@ -90,7 +90,7 @@
                     border-radius: 50%;
                     background: #797D23;
                     color: white;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     position: relative;
                     position: absolute;
                     top: 50%;
@@ -98,8 +98,8 @@
                     transform: translateY(-50%);
                     span{
                         position: absolute;
-                        left: 53%;
-                        top: 35%;
+                        left: 46%;
+                        top: 38%;
                         transform: translate(-50%, -50%);
                     }
                     @media(max-width:768px){
@@ -112,7 +112,7 @@
                     border-radius: 50%;
                     background: #797D23;
                     color: white;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     position: absolute;
                     top: 50%;
                     right: -6%;
@@ -120,7 +120,7 @@
                     span{
                         position: absolute;
                         left: 53%;
-                        top: 35%;
+                        top: 38%;
                         transform: translate(-50%, -50%);
                     }
                     @media(max-width:768px){
