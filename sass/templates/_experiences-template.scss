@@ -136,6 +136,10 @@
                     }
                 }
             }
+            .wpcf7 form.sent .wpcf7-response-output{
+                background: white;
+                font-family: 'Avenir-light';
+            }
             @media screen and (min-width:768px) and (max-width:1080px){
                 padding: 3.5rem 1.5rem;
                 h2{

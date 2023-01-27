@@ -928,6 +928,10 @@ footer .contact .email-content a {
 #experiences-template-ff0b59 .experience .form .submit button:disabled {
   cursor: no-drop;
 }
+#experiences-template-ff0b59 .experience .form .wpcf7 form.sent .wpcf7-response-output {
+  background: white;
+  font-family: "Avenir-light";
+}
 @media screen and (min-width: 768px) and (max-width: 1080px) {
   #experiences-template-ff0b59 .experience .form {
     padding: 3.5rem 1.5rem;
