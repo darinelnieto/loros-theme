@@ -1186,6 +1186,12 @@ footer .contact .email-content a {
   #about-us-page-template-e82d05 .content-welcome .content-text h2 {
     width: fit-content;
     margin: 0 auto 3rem auto;
+    text-align: center;
+    font-size: 3.2rem;
+    line-height: 1.1;
+  }
+  #about-us-page-template-e82d05 .content-welcome .content-text h2 span {
+    padding: 0;
   }
   #about-us-page-template-e82d05 .content-welcome .content-text p {
     font-size: 2rem;
