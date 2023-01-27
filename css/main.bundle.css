@@ -986,6 +986,7 @@ footer .contact .email-content a {
   #experiences-template-ff0b59 .experience .form .content-form {
     max-width: 480px;
     margin: 2rem auto;
+    text-align: left;
   }
 }
 
