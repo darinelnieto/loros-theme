@@ -30,7 +30,7 @@ $email = get_field('email_content', 'option');
                 <?php if($social_networks): ?>
                 <div class="social-networks">
                     <?php foreach($social_networks as $item): ?>
-                        <a href="<?= $item['url']; ?>">
+                        <a href="<?= $item['url']; ?>" target="_blank">
                             <?= $item['icon_fontawesome']; ?>
                         </a>
                     <?php endforeach; ?>
