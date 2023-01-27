@@ -350,6 +350,14 @@ footer .contact .email-content a {
 .forest-nursery-partial-9192c8 .content-texts a:hover {
   color: white;
 }
+@media (max-width: 500px) {
+  .forest-nursery-partial-9192c8 .content-texts h2 {
+    font-size: 3.2rem;
+  }
+  .forest-nursery-partial-9192c8 .content-texts h2 span {
+    font-size: 2.5rem;
+  }
+}
 @media (max-width: 768px) {
   .forest-nursery-partial-9192c8 .content-texts {
     text-align: center;
@@ -426,6 +434,14 @@ footer .contact .email-content a {
   padding: 7px 15px;
   font-size: 1.5rem;
 }
+@media (max-width: 500px) {
+  .aegenerative-agriculture-partial-e2499b .container .col-12 h2 {
+    font-size: 3.2rem;
+  }
+  .aegenerative-agriculture-partial-e2499b .container .col-12 h2 span {
+    font-size: 2.5rem;
+  }
+}
 @media (max-width: 768px) {
   .aegenerative-agriculture-partial-e2499b .container .col-12 {
     text-align: center;
@@ -500,6 +516,14 @@ footer .contact .email-content a {
   position: absolute;
   right: -13%;
   width: calc(100% + 100px);
+}
+@media (max-width: 500px) {
+  .about-us-partial-ead2f7 .container .content-texts h1 {
+    font-size: 3.2rem;
+  }
+  .about-us-partial-ead2f7 .container .content-texts h1 span {
+    font-size: 2.5rem;
+  }
 }
 @media (max-width: 767px) {
   .about-us-partial-ead2f7 .container .content-texts {
