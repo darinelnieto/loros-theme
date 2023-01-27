@@ -226,7 +226,7 @@ footer .contact .email-content a {
 }
 @media (max-width: 640px) {
   .experiences-partial-d7c3f3 .container .experiences .owl-item {
-    padding: 0 6rem;
+    padding: 0 3rem;
   }
 }
 .experiences-partial-d7c3f3 .container .experiences .owl-item:nth-child(2n) .experience .name {
