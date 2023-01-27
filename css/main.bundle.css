@@ -858,10 +858,11 @@ footer .contact .email-content a {
   }
   #experiences-template-ff0b59 .experience .content-text h1 {
     margin: 0 auto 2rem auto;
-    font-size: 2.5rem;
+    font-size: 3.2rem;
+    line-height: 0.9;
   }
   #experiences-template-ff0b59 .experience .content-text h1 span {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) {
