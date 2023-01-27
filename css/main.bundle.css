@@ -1076,6 +1076,7 @@ footer .contact .email-content a {
 @media (max-width: 500px) {
   #general-template-0c7945 .generic-content .text-normal h1 {
     font-size: 3.2rem;
+    line-height: 2.4rem;
   }
   #general-template-0c7945 .generic-content .text-normal h1 span {
     font-size: 2.5rem;
