@@ -521,6 +521,7 @@ footer .contact .email-content a {
 @media (max-width: 500px) {
   .about-us-partial-ead2f7 .container .content-texts h1 {
     font-size: 3.2rem;
+    line-height: 2.4rem;
   }
   .about-us-partial-ead2f7 .container .content-texts h1 span {
     font-size: 2.5rem;
