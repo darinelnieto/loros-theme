@@ -54,7 +54,8 @@ $pdf = get_field('pdf_download');
     form.addEventListener(
         "wpcf7submit",
         (e) => {
-            window.location.href = "https://wa.me/57<?= get_field('whatsapp', 'option'); ?>?text=Quiero%20saber%20más%20sobre%20la%20experiencia%20<?= the_title(); ?>";
+            url = "https://wa.me/57<?= get_field('whatsapp', 'option'); ?>?text=Quiero%20saber%20más%20sobre%20la%20experiencia%20<?= the_title(); ?>";
+            window.open(url, '_blank');
         },
         false
     );
