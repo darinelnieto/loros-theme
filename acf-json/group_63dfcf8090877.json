@@ -1,13 +1,13 @@
 {
-    "key": "group_63c426e44352b",
-    "title": "Generic banner",
+    "key": "group_63dfcf8090877",
+    "title": "what to do page",
     "fields": [
         {
-            "key": "field_63c426e50fdf7",
-            "label": "Gallery image",
-            "name": "gallery_image",
+            "key": "field_63dfcf9c953aa",
+            "label": "Image what to do",
+            "name": "image_what_to_do",
             "aria-label": "",
-            "type": "gallery",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -18,8 +18,6 @@
             },
             "return_format": "array",
             "library": "all",
-            "min": "",
-            "max": "",
             "min_width": "",
             "min_height": "",
             "min_size": "",
@@ -27,32 +25,30 @@
             "max_height": "",
             "max_size": "",
             "mime_types": "",
-            "insert": "append",
             "preview_size": "medium"
+        },
+        {
+            "key": "field_63dfcfd1953ab",
+            "label": "Title what to do",
+            "name": "title_what_to_do",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Among the span tags, there is the light green text with smaller size",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 2,
+            "placeholder": "",
+            "new_lines": "br"
         }
     ],
     "location": [
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "templates\/about-us-page-template.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "templates\/general-template.php"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "experiences"
-            }
-        ],
         [
             {
                 "param": "page_template",
@@ -70,5 +66,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1675612405
+    "modified": 1675612277
 }

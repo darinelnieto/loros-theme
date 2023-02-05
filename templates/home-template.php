@@ -15,6 +15,8 @@ get_header();
     <?php get_template_part('partials/banner-home'); ?>
     <!-- Abouts us -->
     <?php get_template_part('partials/about-us'); ?>
+    <!-- What to do -->
+    <?php get_template_part('partials/what-to-do'); ?>
     <!-- Regenerative agriculture -->
     <?php get_template_part('partials/regenerative-agriculture'); ?>
     <!-- Forest nursery -->

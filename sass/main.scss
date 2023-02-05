@@ -2,6 +2,7 @@
 
 // Ditto include zone (don't delete anything below)
 // #DittoPartials
+@import "./partials/what-to-do";
 @import "./partials/banner-generic";
 @import "./partials/experiences";
 @import "./partials/forest-nursery";
@@ -11,6 +12,7 @@
 @import "./partials/content-header";
 @import "partials/hello";
 // #DittoTemplates
+@import "./templates/what-to-do-page-template";
 @import "./templates/archive-experiences-template";
 @import "./templates/experiences-template";
 @import "./templates/general-template";

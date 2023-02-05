@@ -48,6 +48,110 @@
             "preview_size": "medium"
         },
         {
+            "key": "field_63de8e72d5418",
+            "label": "What to do",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_63de8ea2d5419",
+            "label": "Image what to do",
+            "name": "image_what_to_do",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_63de8ec4d541a",
+            "label": "Title what to do",
+            "name": "title_what_to_do",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Among the span tags, there is the light green text with smaller size",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 2,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_63de8f08d541b",
+            "label": "Description what to do",
+            "name": "description_what_to_do",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Among the span tags, there is the light green text with smaller size",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 2,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_63de8f2dd541c",
+            "label": "Link what to do",
+            "name": "link_what_to_do",
+            "aria-label": "",
+            "type": "page_link",
+            "instructions": "Among the span tags, there is the light green text with smaller size",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": "",
+            "allow_archives": 1,
+            "multiple": 0,
+            "allow_null": 0
+        },
+        {
             "key": "field_63c2a418c1f63",
             "label": "Regenerative agriculture",
             "name": "",
@@ -272,5 +376,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1673713552
+    "modified": 1675530080
 }
