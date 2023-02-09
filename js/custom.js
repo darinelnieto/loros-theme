@@ -64,3 +64,18 @@ $('.generic-banner').owlCarousel({
     dots:true,
     items:1
 }).css({'opacity':1});
+// what to do
+var read_more = false;
+$('.read-more').on('click', function(){
+    if(read_more == false){
+        $('.content-description').addClass('active');
+        $('.more').addClass('d-none');
+        $('.less').removeClass('d-none');
+        read_more = true;
+    }else{
+        $('.content-description').removeClass('active');
+        $('.more').removeClass('d-none');
+        $('.less').addClass('d-none');
+        read_more = false;
+    }
+});

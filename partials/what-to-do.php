@@ -17,15 +17,17 @@ $learn_more = get_field('link_what_to_do');
         <div class="row">
             <div class="col-12 col-md-6 content-texts">
                 <h2><?= get_field('title_what_to_do'); ?></h2>
-                <p>
-                    <?php
-                        if($page){
-                           echo get_field('description_what_to_do'); 
-                        }else{
-                            echo the_content();
-                        }
-                    ?>
-                </p>
+                <?php if($page): ?>
+                    <p class="in-home"><?= get_field('description_what_to_do'); ?></p>
+                <?php else: ?>
+                    <div class="content-description">
+                        <?= the_content(); ?>
+                    </div>
+                    <div class="read-more">
+                        <span class="more">Leer mas</span>
+                        <span class="less d-none">Leer menos</span>
+                    </div>
+                <?php endif; ?>
                 <?php if($page): ?>
                     <a href="<?= $learn_more; ?>">CONOCE MÁS</a>
                 <?php endif; ?>

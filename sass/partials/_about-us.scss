@@ -34,6 +34,27 @@
             line-clamp: 8;
             -webkit-box-orient: vertical;
         }
+        .content-description{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 9;
+            line-clamp: 9;
+            -webkit-box-orient: vertical;
+            p{
+                margin-bottom: 0;
+            }
+        }
+        .content-description.active{
+            -webkit-line-clamp: inherit;
+            line-clamp: inherit;
+        }
+        .read-more{
+            font-family: 'Avenir-light';
+            color: #797D23;
+            font-weight: bold;
+            cursor: pointer;
+        }
         a{
             font-family: 'Gotham-regular';
             background: #797D23;
