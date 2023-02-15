@@ -37,12 +37,6 @@
             -webkit-box-orient: vertical;
         }
         .content-description{
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 9;
-            line-clamp: 9;
-            -webkit-box-orient: vertical;
             p{
                 margin-bottom: 0;
             }
@@ -71,7 +65,11 @@
             img{
                 position: absolute;
                 right: -10%;
+                bottom: -9%;
                 width: calc(100% + 58px);
+            }
+            .image-home{
+                bottom: -17%;
             }
         }
     }
@@ -112,7 +110,7 @@
                 img{
                     position: relative;
                     right: 4%;
-                    top: 14%;
+                    bottom: -19%;
                     width: calc(100% + 28px);
                 }
             }
@@ -123,7 +121,6 @@
             .content-loro{
                 img{
                     right: -49%;
-                    top: 21%;
                     width: calc(100% + 215px);
                 }
             }
@@ -134,7 +131,6 @@
             .content-loro{
                 img{
                     right: -37%;
-                    top: 0%;
                     width: calc(100% + 200px);
                 }
             }
@@ -145,7 +141,6 @@
             .content-loro{
                 img{
                     right: -13%;
-                    top: 10%;
                     width: calc(100% + 88px);
                 }
             }
@@ -163,6 +158,9 @@
                 img{
                     right: -39%;
                     width: calc(100% + 213px);
+                }
+                .image-home{
+                    bottom: -22%;
                 }
             }
         }

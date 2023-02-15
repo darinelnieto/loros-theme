@@ -23,17 +23,13 @@ $learn_more = get_field('link_what_to_do');
                     <div class="content-description">
                         <?= the_content(); ?>
                     </div>
-                    <div class="read-more">
-                        <span class="more">Leer mas</span>
-                        <span class="less d-none">Leer menos</span>
-                    </div>
                 <?php endif; ?>
                 <?php if($page): ?>
                     <a href="<?= $learn_more; ?>">CONOCE MÁS</a>
                 <?php endif; ?>
             </div>
             <div class="col-12 col-md-6 content-loro">
-                <img src="<?= $image['url']; ?>" alt="<?= $image['title']; ?>">
+                <img src="<?= $image['url']; ?>" alt="<?= $image['title']; ?>" <?php if($page): ?>class="image-home"<?php endif; ?>>
             </div>
         </div>
     </div>

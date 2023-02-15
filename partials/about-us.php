@@ -21,10 +21,6 @@ $page = is_front_page();
                     <div class="content-description">
                         <?= the_content(); ?>
                     </div>
-                    <div class="read-more">
-                        <span class="more">Leer mas</span>
-                        <span class="less d-none">Leer menos</span>
-                    </div>
                 <?php endif; ?>
                 <?php if($page): ?>
                     <a href="<?= get_field('learn_more'); ?>">CONOCE MÁS</a>
