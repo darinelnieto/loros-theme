@@ -148,6 +148,30 @@ footer .contact .email-content a {
   }
 }
 
+.associates-partial-e72c3e {
+  background: rgba(164, 164, 164, 0.3);
+  margin-top: 1rem;
+  padding: 3rem 0;
+}
+.associates-partial-e72c3e .col-12 {
+  text-align: center;
+}
+.associates-partial-e72c3e .col-12 h2 {
+  font-family: "Avenir-medium";
+  color: #082808;
+}
+.associates-partial-e72c3e .col-12 .content-logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.associates-partial-e72c3e .col-12 .content-logos img {
+  width: 100%;
+  max-width: fit-content;
+  margin: 1rem;
+}
+
 .what-to-do-partial-af91aa {
   background: rgba(165, 165, 165, 0.3);
   padding: 4rem 0;

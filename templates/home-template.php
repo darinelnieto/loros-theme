@@ -23,6 +23,8 @@ get_header();
     <?php get_template_part('partials/forest-nursery'); ?>
     <!-- Experiences -->
     <?php get_template_part('partials/experiences'); ?>
+    <!-- Associates -->
+    <?php get_template_part('partials/associates'); ?>
 </main>
 <?php get_footer(); ?>
                     
