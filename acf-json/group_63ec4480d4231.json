@@ -3,6 +3,23 @@
     "title": "How to get",
     "fields": [
         {
+            "key": "field_63ee102d59c13",
+            "label": "url google maps or waze",
+            "name": "url_google_maps_or_waze",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_63ec4482d15b5",
             "label": "Map",
             "name": "map",
@@ -172,5 +189,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1676428715
+    "modified": 1676546293
 }

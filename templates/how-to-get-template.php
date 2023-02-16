@@ -17,7 +17,9 @@ $from = get_field('from');
         <div class="container">
             <div class="row">
                 <div class="col-12 content-image">
-                    <img src="<?= get_field('map'); ?>" alt="Imagen del mapa">
+                    <a href="<?= get_field('url_google_maps_or_waze'); ?>" target="_blank">
+                        <img src="<?= get_field('map'); ?>" alt="Imagen del mapa">
+                    </a>
                 </div>
                 <?php if($arrival_type): ?>
                     <div class="col-12 col-md-4 types">
