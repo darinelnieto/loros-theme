@@ -3,7 +3,12 @@
     padding-bottom: 4rem;
     .container{
         max-width: 1200px;
-        .row{
+        .content-description{
+            font-family: 'Gotham Book';
+            color: #606060;
+            font-size: 1.2rem;
+        }
+        .map{
             background: #D3D3D3;
             border: 3px solid #082808;
             .content-image{

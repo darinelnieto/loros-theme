@@ -16,6 +16,11 @@ $from = get_field('from');
     <section>
         <div class="container">
             <div class="row">
+                <div class="col-12 mt-5 mb-3 content-description">
+                    <?= the_content() ?>
+                </div>
+            </div>
+            <div class="row map">
                 <div class="col-12 content-image">
                     <a href="<?= get_field('url_google_maps_or_waze'); ?>" target="_blank">
                         <img src="<?= get_field('map'); ?>" alt="Imagen del mapa">

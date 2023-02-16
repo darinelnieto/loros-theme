@@ -937,17 +937,22 @@ footer .contact .email-content a {
 #how-to-get-template-f3897a .container {
   max-width: 1200px;
 }
-#how-to-get-template-f3897a .container .row {
+#how-to-get-template-f3897a .container .content-description {
+  font-family: "Gotham Book";
+  color: #606060;
+  font-size: 1.2rem;
+}
+#how-to-get-template-f3897a .container .map {
   background: #D3D3D3;
   border: 3px solid #082808;
 }
-#how-to-get-template-f3897a .container .row .content-image {
+#how-to-get-template-f3897a .container .map .content-image {
   padding: 0.7rem;
 }
-#how-to-get-template-f3897a .container .row .content-image img {
+#how-to-get-template-f3897a .container .map .content-image img {
   width: 100%;
 }
-#how-to-get-template-f3897a .container .row .types p {
+#how-to-get-template-f3897a .container .map .types p {
   margin-bottom: 0.5rem;
   font-family: "Gotham-Black";
   display: flex;
@@ -955,23 +960,23 @@ footer .contact .email-content a {
   line-height: 1;
   font-size: 1.2rem;
 }
-#how-to-get-template-f3897a .container .row .types p span {
+#how-to-get-template-f3897a .container .map .types p span {
   width: 45px;
   height: 23px;
   display: block;
   margin-right: 15px;
 }
-#how-to-get-template-f3897a .container .row .from p {
+#how-to-get-template-f3897a .container .map .from p {
   font-family: "Gotham Book";
   margin-bottom: 0;
 }
-#how-to-get-template-f3897a .container .row a {
+#how-to-get-template-f3897a .container .map a {
   text-decoration: none;
   color: #685325;
   font-family: "Gotham Book";
   font-size: 1.5rem;
 }
-#how-to-get-template-f3897a .container .row a .contact {
+#how-to-get-template-f3897a .container .map a .contact {
   background: #F1CF67;
   border: 3px solid #A5893A;
   width: 100%;
@@ -979,16 +984,16 @@ footer .contact .email-content a {
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
 }
-#how-to-get-template-f3897a .container .row a .contact span {
+#how-to-get-template-f3897a .container .map a .contact span {
   margin-left: 6px;
 }
 @media screen and (min-width: 768px) and (max-width: 956px) {
-  #how-to-get-template-f3897a .container .row a {
+  #how-to-get-template-f3897a .container .map a {
     font-size: 0.8rem !important;
   }
 }
 @media screen and (min-width: 956px) and (max-width: 1200px) {
-  #how-to-get-template-f3897a .container .row a {
+  #how-to-get-template-f3897a .container .map a {
     font-size: 1.1rem;
   }
 }
