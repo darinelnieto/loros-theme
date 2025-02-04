@@ -116,10 +116,15 @@ if (function_exists('acf_add_options_page')){
 // options experiences
 if (function_exists('acf_add_options_page')){
 	acf_add_options_page(array(
-		'page_title'    => 'Experiences',
-		'menu_title'    => 'Experiences',
-		'menu_slug'     => 'experiences',
+		'page_title'    => 'Option Experiences',
+		'menu_title'    => 'Option Experiences',
+		'menu_slug'     => 'option-experiences',
 		'capability'    => 'edit_posts',
 		'redirect'      =>  true
 	  ));
+    acf_add_options_sub_page(array(
+      'page_title'     => 'Experiences',
+      'menu_title'     => 'Experiences',
+      'parent_slug'   => 'option-experiences',
+    ));
 }

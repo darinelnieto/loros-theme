@@ -14,7 +14,7 @@ $experiences = new WP_Query(array('post_type' => 'Experiences', 'post_status' =>
 <main id="archive-experiences-template-dc1f40">
     <section>
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-12 text-center mb-5 mt-5">
                     <h1><?= the_title(); ?></h1>
                 </div>

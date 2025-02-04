@@ -42,7 +42,8 @@ html, body {
 }
 
 body .container {
-  max-width: 1280px;
+  max-width: 1300px;
+  width: 100%;
 }
 
 /*===================Header==================*/
@@ -77,6 +78,9 @@ footer .menu-menu-1-container ul li a:hover {
 }
 footer .menu-menu-1-container ul li a.active {
   color: #AAAA1B;
+}
+footer .menu-menu-1-container ul li:last-child {
+  display: none;
 }
 @media (max-width: 768px) {
   footer .menu-menu-1-container ul {
@@ -187,7 +191,7 @@ footer .contact .email-content a {
   line-height: 0.7;
   font-size: 4rem;
   border-bottom: 1px solid #000000;
-  max-width: 323px;
+  max-width: 365px;
   padding-bottom: 1.5rem;
   margin-bottom: 1.2rem;
 }
@@ -382,6 +386,8 @@ footer .contact .email-content a {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.3s;
+  width: 90%;
+  font-size: 20px;
 }
 .experiences-partial-d7c3f3 .container .experiences .owl-item .experience:hover a h3 {
   display: block;
@@ -564,7 +570,7 @@ footer .contact .email-content a {
   line-height: 0.8;
   font-size: 4rem;
   border-bottom: 1px solid #000000;
-  max-width: 413px;
+  max-width: 465px;
   padding-bottom: 1.5rem;
   margin-bottom: 1.2rem;
 }
@@ -1026,6 +1032,8 @@ footer .contact .email-content a {
   box-shadow: 0 0 17px -2px #999;
   max-width: 332px;
   margin: 0 auto;
+  height: 100%;
+  background: white;
 }
 #archive-experiences-template-dc1f40 .container .experience a .card-experience .content-image {
   max-width: 332px;
@@ -1038,7 +1046,6 @@ footer .contact .email-content a {
   border-radius: 25px 25px 0 0;
 }
 #archive-experiences-template-dc1f40 .container .experience a .card-experience .name {
-  background: white;
   text-align: center;
   min-height: 112px;
   position: relative;
@@ -1050,32 +1057,25 @@ footer .contact .email-content a {
   line-height: 1;
   color: #082808;
   font-family: "Gotham-Black";
-  padding: 1.5rem;
-  position: absolute;
-  width: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  padding: 1rem;
 }
-#archive-experiences-template-dc1f40 .container .experience a:hover .name {
+#archive-experiences-template-dc1f40 .container .experience a:hover .card-experience {
   background: #E0DC65;
 }
 
-#experiences-template-ff0b59 .experience {
-  display: flex;
+#experiences-template-ff0b59 {
+  padding-top: 11rem;
+  background: rgba(173, 173, 173, 0.3);
 }
 #experiences-template-ff0b59 .experience .content-text {
-  width: 65%;
-  padding: 3rem 2rem 3rem 4rem;
-  background: rgba(173, 173, 173, 0.3);
+  padding: 3rem 0;
 }
 #experiences-template-ff0b59 .experience .content-text h1 {
   font-family: "Gotham-Black";
   color: #082808;
   line-height: 0.8;
-  font-size: 4rem;
+  font-size: 2.5rem;
   border-bottom: 1px solid #000000;
-  max-width: 580px;
   padding-bottom: 1.5rem;
   margin-bottom: 1.6rem;
 }
@@ -1090,6 +1090,9 @@ footer .contact .email-content a {
   line-height: 1.3;
   margin-bottom: 2rem;
 }
+#experiences-template-ff0b59 .experience .content-text p b {
+  font-weight: 500;
+}
 #experiences-template-ff0b59 .experience .content-text a img {
   width: 100%;
   max-width: fit-content;
@@ -1100,7 +1103,7 @@ footer .contact .email-content a {
   }
   #experiences-template-ff0b59 .experience .content-text h1 {
     margin: 0 auto 2rem auto;
-    font-size: 3.2rem;
+    font-size: 2.2rem;
     line-height: 0.9;
   }
   #experiences-template-ff0b59 .experience .content-text h1 span {
@@ -1111,42 +1114,41 @@ footer .contact .email-content a {
   #experiences-template-ff0b59 .experience .content-text h1 {
     font-size: 2.7rem;
   }
-  #experiences-template-ff0b59 .experience .content-text h1 span {
-    font-size: 2rem;
-  }
   #experiences-template-ff0b59 .experience .content-text p {
     font-size: 1.2rem;
   }
 }
-#experiences-template-ff0b59 .experience .form {
-  width: 35%;
+#experiences-template-ff0b59 .experience .form-contain {
+  position: relative;
+}
+#experiences-template-ff0b59 .experience .form-contain .form {
   background: #797D23;
   padding: 3.5rem;
 }
-#experiences-template-ff0b59 .experience .form h2 {
+#experiences-template-ff0b59 .experience .form-contain .form h2 {
   color: white;
   font-family: "Gotham-Black";
   font-size: 3rem;
   line-height: 0.8;
 }
-#experiences-template-ff0b59 .experience .form h2 span {
+#experiences-template-ff0b59 .experience .form-contain .form h2 span {
   font-size: 1.8rem;
 }
-#experiences-template-ff0b59 .experience .form .form-group {
+#experiences-template-ff0b59 .experience .form-contain .form .form-group {
   position: relative;
 }
-#experiences-template-ff0b59 .experience .form .form-group .wpcf7-not-valid-tip {
+#experiences-template-ff0b59 .experience .form-contain .form .form-group .wpcf7-not-valid-tip {
   position: absolute;
   top: 0;
   right: 0;
 }
-#experiences-template-ff0b59 .experience .form .form-group label {
+#experiences-template-ff0b59 .experience .form-contain .form .form-group label {
   font-family: "Avenir-light";
   color: white;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
-#experiences-template-ff0b59 .experience .form .form-group input {
+#experiences-template-ff0b59 .experience .form-contain .form .form-group input {
   width: 100%;
   background: white;
   border: 2px solid #939392;
@@ -1155,15 +1157,15 @@ footer .contact .email-content a {
   font-family: "Avenir-light";
   color: #939392;
 }
-#experiences-template-ff0b59 .experience .form .content-politc label {
+#experiences-template-ff0b59 .experience .form-contain .form .content-politc label {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-#experiences-template-ff0b59 .experience .form .content-politc label br, #experiences-template-ff0b59 .experience .form .content-politc label .wpcf7-form-control-wrap {
+#experiences-template-ff0b59 .experience .form-contain .form .content-politc label br, #experiences-template-ff0b59 .experience .form-contain .form .content-politc label .wpcf7-form-control-wrap {
   display: none;
 }
-#experiences-template-ff0b59 .experience .form .content-politc label .anima-check {
+#experiences-template-ff0b59 .experience .form-contain .form .content-politc label .anima-check {
   display: block;
   width: 15px;
   height: 15px;
@@ -1173,18 +1175,18 @@ footer .contact .email-content a {
   border-radius: 50%;
   transition: 0.2s;
 }
-#experiences-template-ff0b59 .experience .form .content-politc label .anima-check.active {
+#experiences-template-ff0b59 .experience .form-contain .form .content-politc label .anima-check.active {
   background: #1D1D1B;
 }
-#experiences-template-ff0b59 .experience .form .content-politc label .text {
+#experiences-template-ff0b59 .experience .form-contain .form .content-politc label .text {
   font-family: "Avenir-light";
   color: white;
   font-size: 0.8rem;
 }
-#experiences-template-ff0b59 .experience .form .content-politc label .text a {
+#experiences-template-ff0b59 .experience .form-contain .form .content-politc label .text a {
   color: white;
 }
-#experiences-template-ff0b59 .experience .form .submit button {
+#experiences-template-ff0b59 .experience .form-contain .form .submit button {
   opacity: 0;
   background: #F6D467;
   outline: none;
@@ -1194,41 +1196,37 @@ footer .contact .email-content a {
   text-transform: uppercase;
   padding: 4px 20px;
 }
-#experiences-template-ff0b59 .experience .form .submit button:disabled {
+#experiences-template-ff0b59 .experience .form-contain .form .submit button:disabled {
   cursor: no-drop;
 }
-#experiences-template-ff0b59 .experience .form .wpcf7 form.sent .wpcf7-response-output {
+#experiences-template-ff0b59 .experience .form-contain .form .wpcf7 form.sent .wpcf7-response-output {
   background: white;
   font-family: "Avenir-light";
 }
-@media screen and (min-width: 768px) and (max-width: 1080px) {
-  #experiences-template-ff0b59 .experience .form {
+@media (max-width: 768px) {
+  #experiences-template-ff0b59 .experience .form-contain .form {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 1080px) {
+  #experiences-template-ff0b59 .experience .form-contain .form {
     padding: 3.5rem 1.5rem;
   }
-  #experiences-template-ff0b59 .experience .form h2 {
+  #experiences-template-ff0b59 .experience .form-contain .form h2 {
     font-size: 2.7rem;
   }
-  #experiences-template-ff0b59 .experience .form h2 span {
+  #experiences-template-ff0b59 .experience .form-contain .form h2 span {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 768px) {
-  #experiences-template-ff0b59 .experience {
-    display: block;
-  }
-  #experiences-template-ff0b59 .experience .content-text {
-    width: 100%;
-    padding: 3.5rem 1rem;
-  }
-  #experiences-template-ff0b59 .experience .form {
-    width: 100%;
-    text-align: center;
-    padding: 3rem 1rem;
-  }
-  #experiences-template-ff0b59 .experience .form .content-form {
-    max-width: 480px;
-    margin: 2rem auto;
-    text-align: left;
+#experiences-template-ff0b59 .experience .form-contain .form.sticky {
+  position: fixed;
+  top: 0;
+  max-width: 409px;
+}
+@media (max-width: 1080px) {
+  #experiences-template-ff0b59 .experience .form-contain .form.sticky {
+    max-width: 349px;
   }
 }
 
@@ -1254,7 +1252,7 @@ footer .contact .email-content a {
 #general-template-0c7945 .generic-content .content-texts h1 {
   font-family: "Gotham-Black";
   color: #082808;
-  line-height: 0.7;
+  line-height: 0.8;
   font-size: 4rem;
   border-bottom: 1px solid #000000;
   max-width: 413px;
@@ -1309,7 +1307,7 @@ footer .contact .email-content a {
 #general-template-0c7945 .generic-content .text-normal h1 {
   font-family: "Gotham-Black";
   color: #082808;
-  line-height: 0.7;
+  line-height: 0.8;
   font-size: 4rem;
   border-bottom: 1px solid #000000;
   max-width: 413px;
@@ -1373,7 +1371,7 @@ footer .contact .email-content a {
   color: white;
   font-family: "Gotham-Black";
   font-size: 5rem;
-  line-height: 0.8;
+  line-height: 0.9;
   text-align: left;
   width: fit-content;
   margin: 0 auto 2rem auto;

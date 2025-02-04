@@ -26,7 +26,7 @@ $email = get_field('email_content', 'option');
                 ?>
             </div>
             <div class="col-12 col-md-4 contact">
-                <h2>Síguenos</h2>
+                <h2><?php if(get_bloginfo("language") == "en-US"): echo "Follow us"; else: echo "Síguenos"; endif; ?></h2>
                 <?php if($social_networks): ?>
                 <div class="social-networks">
                     <?php foreach($social_networks as $item): ?>

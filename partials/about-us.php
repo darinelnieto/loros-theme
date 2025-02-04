@@ -23,7 +23,7 @@ $page = is_front_page();
                     </div>
                 <?php endif; ?>
                 <?php if($page): ?>
-                    <a href="<?= get_field('learn_more'); ?>">CONOCE MÁS</a>
+                    <a href="<?= get_field('learn_more'); ?>"><?php if(get_bloginfo("language") == "en-US"): echo "LEARN MORE"; else: echo "VER MÁS"; endif; ?></a>
                 <?php endif; ?>
             </div>
             <div class="col-12 col-md-6 content-loro">

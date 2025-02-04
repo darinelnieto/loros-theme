@@ -23,7 +23,9 @@ get_header();
         <div class="content-text">
             <h2 class="mb-4"><?= get_field('welcome_title'); ?></h2>
             <p class="mb-4"><?= get_field('welcome_description'); ?></p>
-            <a href="<?= get_field('location_link'); ?>" target="_blank">COMO LLEGAR</a>
+            <a href="<?= get_field('location_link'); ?>" target="_blank">
+                <?php if(get_bloginfo("language") == "en-US"): echo "HOW TO GET THERE"; else: echo "COMO LLEGAR"; endif; ?>
+            </a>
         </div>
     </section>
 </main>

@@ -21,7 +21,7 @@ $learn_more = get_field('learn_more_regenerative_agriculture');
             <div class="col-12 col-md-5">
                 <h2><?= get_field('title_regenerative_agriculture'); ?></h2>
                 <p <?php if($page): ?>class="in-home"<?php endif; ?>><?= get_field('description_regenerative_agriculture'); ?></p>
-                <a href="<?= $learn_more; ?>">CONOCE MÁS</a>
+                <a href="<?= $learn_more; ?>"><?php if(get_bloginfo("language") == "en-US"): echo "LEARN MORE"; else: echo "VER MÁS"; endif; ?></a>
             </div>
             <div class="col-12 d-block d-md-none mt-5 content-image">
                 <img src="<?= $image['url']; ?>" alt="<?= $image['title']; ?>">

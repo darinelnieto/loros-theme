@@ -14,7 +14,7 @@ $experiences = new WP_Query(array('post_type' => 'Experiences', 'post_status' =>
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-10 offset-md-1 text-center">
-                <h2>Experiencias</h2>
+                <h2><?php if(get_bloginfo("language") == "en-US"): echo "Experiences"; else: echo "Experiencias"; endif; ?></h2>
                 <div class="owl-carousel experiences">
                     <?php
                         if($experiences->have_posts()){

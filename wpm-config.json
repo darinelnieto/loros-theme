@@ -1,0 +1,12 @@
+{
+    "post_types": {
+        "experiences": []
+    },
+    "taxonomies": {
+        "category": []
+    },
+    "admin_pages": [
+        "toplevel_page_acf-options-footer",
+        "toplevel_page_acf-options-experiences"
+    ]
+}

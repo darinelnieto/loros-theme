@@ -25,7 +25,7 @@ $learn_more = get_field('link_what_to_do');
                     </div>
                 <?php endif; ?>
                 <?php if($page): ?>
-                    <a href="<?= $learn_more; ?>">CONOCE MÁS</a>
+                    <a href="<?= $learn_more; ?>"><?php if(get_bloginfo("language") == "en-US"): echo "LEARN MORE"; else: echo "VER MÁS"; endif; ?></a>
                 <?php endif; ?>
             </div>
             <div class="col-12 col-md-6 content-loro">
