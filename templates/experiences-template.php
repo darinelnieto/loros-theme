@@ -97,7 +97,7 @@ $gallery = get_field('gallery_image');
         }
     });
     // submit
-    const form = document.querySelector("#wpcf7-f122-o1");
+    const form = document.querySelector(".wpcf7");
     form.addEventListener(
         "wpcf7submit",
         (e) => {

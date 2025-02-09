@@ -34,4 +34,3 @@ $learn_more = get_field('link_what_to_do');
         </div>
     </div>
 </section>
-                    
