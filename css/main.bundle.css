@@ -936,6 +936,243 @@ footer .contact .email-content a {
   }
 }
 
+#single-strory-template-dfb0a9 {
+  padding-top: 11rem;
+  padding-bottom: 3rem;
+  background: rgba(164, 164, 164, 0.3);
+}
+#single-strory-template-dfb0a9 .left-content {
+  position: relative;
+  overflow: hidden;
+}
+#single-strory-template-dfb0a9 .left-content .content {
+  background: #ffffff;
+  padding: 3.5rem 1rem;
+  height: 60vh;
+}
+@media (max-width: 768px) {
+  #single-strory-template-dfb0a9 .left-content .content {
+    height: auto;
+    padding: 1rem;
+  }
+}
+#single-strory-template-dfb0a9 .left-content .content h1 {
+  font-family: "Gotham-Black";
+  color: #082808;
+  font-size: 2rem;
+}
+#single-strory-template-dfb0a9 .left-content .content .post-dates {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+#single-strory-template-dfb0a9 .left-content .content .post-dates p {
+  margin: 0;
+  font-family: "Avenir-light";
+  font-size: 17px;
+}
+#single-strory-template-dfb0a9 .left-content .content .post-dates p strong {
+  font-family: "Avenir-medium";
+}
+#single-strory-template-dfb0a9 .left-content .content .social-networks ul {
+  list-style: none;
+  padding: 0;
+}
+#single-strory-template-dfb0a9 .left-content .content .social-networks ul li a {
+  text-decoration: none;
+  font-family: "Gotham-Black";
+  font-size: 1.1rem;
+  color: #797D23;
+  transition: 0.2s;
+}
+#single-strory-template-dfb0a9 .left-content .content .social-networks ul li a:hover {
+  color: #082808;
+}
+#single-strory-template-dfb0a9 .left-content .content .post-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 5%;
+  width: 90%;
+}
+#single-strory-template-dfb0a9 .left-content .content .post-navigation a {
+  color: #797D23;
+  transition: 0.2s;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-family: "Gotham-Black";
+}
+#single-strory-template-dfb0a9 .left-content .content .post-navigation a:hover {
+  color: #082808;
+}
+@media (max-width: 768px) {
+  #single-strory-template-dfb0a9 .left-content .content .post-navigation {
+    position: relative;
+    bottom: inherit;
+  }
+}
+#single-strory-template-dfb0a9 .left-content .content.sticky {
+  position: fixed;
+  top: 0;
+  width: 28.3854166667vw;
+}
+@media (max-width: 1080px) {
+  #single-strory-template-dfb0a9 .left-content .content.sticky {
+    width: 310px;
+  }
+}
+#single-strory-template-dfb0a9 .post-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#single-strory-template-dfb0a9 .post-content .feature-img img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 768px) {
+  #single-strory-template-dfb0a9 .post-content .feature-img img {
+    height: auto;
+  }
+}
+#single-strory-template-dfb0a9 .post-content .description h2, #single-strory-template-dfb0a9 .post-content .description h3, #single-strory-template-dfb0a9 .post-content .description h4, #single-strory-template-dfb0a9 .post-content .description h5, #single-strory-template-dfb0a9 .post-content .description h6 {
+  font-family: "Gotham-Black";
+  color: #797D23;
+}
+#single-strory-template-dfb0a9 .post-content .description p {
+  font-family: "Avenir-light";
+  color: #707070;
+  font-size: 18px;
+}
+#single-strory-template-dfb0a9 .post-content .description p strong, #single-strory-template-dfb0a9 .post-content .description p b {
+  font-family: "Avenir-medium";
+}
+#single-strory-template-dfb0a9 .post-content .description p:last-child {
+  margin-bottom: 0;
+}
+
+#stories-page-template-686681 {
+  padding-top: 3rem;
+  background: rgba(164, 164, 164, 0.3);
+  /*=============== Posts ==============*/
+}
+#stories-page-template-686681 .banner {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+}
+#stories-page-template-686681 .banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#stories-page-template-686681 .banner .container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  z-index: 1;
+}
+#stories-page-template-686681 .banner .container h1 {
+  color: #ffffff;
+  font-family: "Gotham-Black";
+}
+#stories-page-template-686681 .banner .container p {
+  color: #ffffff;
+  font-family: "Avenir-light";
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  max-width: 500px;
+}
+#stories-page-template-686681 .banner .container p strong {
+  font-family: "Gotham Book";
+}
+#stories-page-template-686681 .stories {
+  padding: 3rem 0;
+}
+#stories-page-template-686681 .stories #stories-list {
+  margin-bottom: 2rem;
+}
+#stories-page-template-686681 .stories #stories-list a {
+  text-decoration: none;
+}
+#stories-page-template-686681 .stories #stories-list a .card-posts {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  height: 100%;
+}
+#stories-page-template-686681 .stories #stories-list a .card-posts .image-contain {
+  width: 100%;
+  height: 200px;
+}
+#stories-page-template-686681 .stories #stories-list a .card-posts .image-contain img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#stories-page-template-686681 .stories #stories-list a .card-posts .text-contain {
+  padding: 10px;
+}
+#stories-page-template-686681 .stories #stories-list a .card-posts .text-contain .name-post {
+  font-size: 22px;
+  color: #797D23;
+  font-family: "Gotham-Black";
+}
+#stories-page-template-686681 .stories #stories-list a .card-posts .text-contain .description {
+  font-family: "Gotham Book";
+  color: #606060;
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-bottom: 10px;
+}
+#stories-page-template-686681 .stories #stories-list a .card-posts .text-contain .label-text {
+  font-family: "Gotham Book";
+  color: #606060;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+#stories-page-template-686681 .stories #stories-list a .card-posts .text-contain .label-text strong {
+  font-family: "Gotham-Black";
+}
+#stories-page-template-686681 .stories #stories-list a .card-posts .text-contain .read-more-text {
+  margin-top: 10px;
+  color: #707070;
+  font-family: "Avenir-light";
+  font-size: 14px;
+  display: block;
+  text-align: right;
+  transition: 0.2s;
+}
+#stories-page-template-686681 .stories #stories-list a .card-posts:hover .text-contain .read-more-text {
+  color: #082808;
+}
+#stories-page-template-686681 .stories .read-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 35px;
+  background: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid #797D23;
+  color: #797D23;
+  margin: 0 auto;
+  font-family: "Gotham Book";
+  font-family: 18px;
+  transition: 0.2s;
+}
+#stories-page-template-686681 .stories .read-more:hover {
+  background: #797D23;
+  color: #ffffff;
+}
+
 #how-to-get-template-f3897a {
   padding-top: 11rem;
   padding-bottom: 4rem;

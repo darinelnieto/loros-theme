@@ -112,6 +112,11 @@ if (function_exists('acf_add_options_page')){
 		'menu_title'     => 'Footer',
 		'parent_slug'   => 'theme-settings',
 	));
+  acf_add_options_sub_page(array(
+		'page_title'     => 'Stories globals',
+		'menu_title'     => 'Stories globals',
+		'parent_slug'   => 'theme-settings',
+	));
 }
 // options experiences
 if (function_exists('acf_add_options_page')){
@@ -127,4 +132,216 @@ if (function_exists('acf_add_options_page')){
       'menu_title'     => 'Experiences',
       'parent_slug'   => 'option-experiences',
     ));
+}
+/*=================== Stories =====================*/
+add_theme_support('post-thumbnails');
+add_post_type_support( 'story', 'thumbnail' );
+function stories_post()
+{
+  /*====== Argument post type =====*/
+  $args = array(
+    'public' => true,
+    'has_archive' => true,
+    'label'  => 'Stories',
+    'menu_icon' => 'dashicons-embed-photo',
+    'supports' => ['title', 'editor', 'thumbnail'],
+  );
+  /*============ Register post type ============*/
+  register_post_type('story', $args);
+  /*============ Register taxonomy of fqas ============*/
+   /*============ Argument taxonimy ============*/
+   $labels = array(
+    'name' => _x('Country category', 'taxonomy general name'),
+    'singular_name' => _x('Country category', 'taxonomy singular name'),
+    'search_items' =>  __('Search Country category'),
+    'all_items' => __('All Country category'),
+    'parent_item' => __('Parent Country category'),
+    'parent_item_colon' => __('Parent Country category:'),
+    'edit_item' => __('Edit Country category'),
+    'update_item' => __('Update Country category'),
+    'add_new_item' => __('Add New Country category'),
+    'new_item_name' => __('New Country category Name'),
+    'menu_name' => __('Country category'),
+  );
+  /*========== Register taxonomi ==========*/
+  register_taxonomy('country_cat', array('story'), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_in_rest' => true,
+    'show_admin_column' => true,
+    'query_var' => true,
+    'rewrite' => array('slug' => 'country_cat'),
+  ));
+  /*============ City ============*/
+  $labels = array(
+    'name' => _x('City category', 'taxonomy general name'),
+    'singular_name' => _x('City category', 'taxonomy singular name'),
+    'search_items' =>  __('Search City category'),
+    'all_items' => __('All City category'),
+    'parent_item' => __('Parent City category'),
+    'parent_item_colon' => __('Parent City category:'),
+    'edit_item' => __('Edit City category'),
+    'update_item' => __('Update City category'),
+    'add_new_item' => __('Add New City category'),
+    'new_item_name' => __('New City category Name'),
+    'menu_name' => __('City category'),
+  );
+  /*========== Register taxonomi ==========*/
+  register_taxonomy('city_cat', array('story'), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_in_rest' => true,
+    'show_admin_column' => true,
+    'query_var' => true,
+    'rewrite' => array('slug' => 'city_cat'),
+  ));
+  /*============ City ============*/
+  $labels = array(
+    'name' => _x('Ecosystem category', 'taxonomy general name'),
+    'singular_name' => _x('Ecosystem category', 'taxonomy singular name'),
+    'search_items' =>  __('Search Ecosystem category'),
+    'all_items' => __('All Ecosystem category'),
+    'parent_item' => __('Parent Ecosystem category'),
+    'parent_item_colon' => __('Parent Ecosystem category:'),
+    'edit_item' => __('Edit Ecosystem category'),
+    'update_item' => __('Update Ecosystem category'),
+    'add_new_item' => __('Add New Ecosystem category'),
+    'new_item_name' => __('New Ecosystem category Name'),
+    'menu_name' => __('Ecosystem category'),
+  );
+  /*========== Register taxonomi ==========*/
+  register_taxonomy('ecosystem_cat', array('story'), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_in_rest' => true,
+    'show_admin_column' => true,
+    'query_var' => true,
+    'rewrite' => array('slug' => 'ecosystem_cat'),
+  ));
+  /*============ Species ============*/
+  $labels = array(
+    'name' => _x('Species category', 'taxonomy general name'),
+    'singular_name' => _x('Species category', 'taxonomy singular name'),
+    'search_items' =>  __('Search Species category'),
+    'all_items' => __('All Species category'),
+    'parent_item' => __('Parent Species category'),
+    'parent_item_colon' => __('Parent Species category:'),
+    'edit_item' => __('Edit Species category'),
+    'update_item' => __('Update Species category'),
+    'add_new_item' => __('Add New Species category'),
+    'new_item_name' => __('New Species category Name'),
+    'menu_name' => __('Species category'),
+  );
+  /*========== Register taxonomi ==========*/
+  register_taxonomy('species_cat', array('story'), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_in_rest' => true,
+    'show_admin_column' => true,
+    'query_var' => true,
+    'rewrite' => array('slug' => 'species_cat'),
+  ));
+};
+add_action('init', 'stories_post', 3);
+/*============== Read more stories =============*/
+add_action('rest_api_init', function () {
+  register_rest_route('stories', '/list', array(
+    array(
+      'methods'               => WP_REST_Server::READABLE,
+      'callback'              => 'stories_list_handler',
+      'permission_callback'   => '__return_true',
+    )
+  ));
+});
+/*============ ============*/
+function stories_list_handler($request){
+  $params = $request->get_params();
+  $totalPosts = wp_count_posts("story");
+  $count = $totalPosts ? $totalPosts->publish : 0;
+  $formatedCards = [];
+  $query = [
+    'post_type'         => 'story',
+    'post_status'       => 'publish',
+    'tax_query' => array(
+      'relation' => 'AND',
+    ),
+    'meta_query' => array(),
+    'posts_per_page'    => $request['posts_per_page'] ? $request['posts_per_page'] : -1,
+    'offset'            => $request['offset'] ? $request['offset'] : 0,
+    'order' => 'DESC'
+  ];
+  // By country
+  if ($request['country']) {
+    array_push($query['tax_query'], [
+      'taxonomy' => 'country_cat',
+      'field' => 'name',
+      'terms' =>  $request['country']
+    ]);
+  }
+  // By city
+  if ($request['city']) {
+    // get by categories
+    array_push($query['tax_query'], [
+      'taxonomy' => 'city_cat',
+      'field' => 'name',
+      'terms' =>  $request['city']
+    ]);
+  }
+  // By ecosystem
+  if ($request['ecosystem']) {
+    array_push($query['tax_query'], [
+      'taxonomy' => 'ecosystem_cat',
+      'field' => 'name',
+      'terms' =>  $request['ecosystem']
+    ]);
+  }
+  // By ecosystem
+  if ($request['species']) {
+    array_push($query['tax_query'], [
+      'taxonomy' => 'species_cat',
+      'field' => 'name',
+      'terms' =>  $request['species']
+    ]);
+  }
+
+  $news = new WP_Query($query);
+  $story = array();
+  if($news->have_posts()){
+    while ($news->have_posts()) {
+      $news->the_post();
+      array_push($story, array(
+        'title'         => get_the_title(get_the_id()),
+        "thumbnail"     => get_the_post_thumbnail_url(get_the_id()),
+        "permalink"     => get_permalink(get_the_id()),
+        "author" => get_field('author', get_the_id()),
+        "short_description" => get_field('short_description', get_the_id()),
+        'country'            => get_the_terms(get_the_id(), 'country_cat')[0]->name,
+        'city'               => get_the_terms(get_the_id(), 'city_cat')[0]->name,
+        'ecosystem'          => get_the_terms(get_the_id(), 'ecosystem_cat')[0]->name,
+        'species'            => get_the_terms(get_the_id(), 'species_cat')[0]->name,
+        'post_date'          => get_the_date('Y-m-d', get_the_id()),
+      ));
+    }
+    wp_reset_postdata();
+  }
+  $total = [];
+  if ($story) :
+    array_push($total, array(
+      'have_post' => true,
+      'total'     => $count,
+      'posts'     => $formatedCards
+    ));
+  else :
+    array_push($total, array(
+      'have_post' => false,
+      'total'     => 0,
+      'posts'     => null,
+    ));
+  endif;
+  $stories = ['stories' => $story, 'total' => $total];
+  return $stories;
 }
