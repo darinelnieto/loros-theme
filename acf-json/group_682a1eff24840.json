@@ -80,7 +80,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "story"
+                "value": "historias"
             }
         ]
     ],
@@ -93,5 +93,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1747621400
+    "modified": 1747659102
 }

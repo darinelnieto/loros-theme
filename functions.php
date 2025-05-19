@@ -135,19 +135,19 @@ if (function_exists('acf_add_options_page')){
 }
 /*=================== Stories =====================*/
 add_theme_support('post-thumbnails');
-add_post_type_support( 'story', 'thumbnail' );
+add_post_type_support( 'historias', 'thumbnail' );
 function stories_post()
 {
   /*====== Argument post type =====*/
   $args = array(
     'public' => true,
     'has_archive' => true,
-    'label'  => 'Stories',
+    'label'  => 'Historias',
     'menu_icon' => 'dashicons-embed-photo',
     'supports' => ['title', 'editor', 'thumbnail'],
   );
   /*============ Register post type ============*/
-  register_post_type('story', $args);
+  register_post_type('historias', $args);
   /*============ Register taxonomy of fqas ============*/
    /*============ Argument taxonimy ============*/
    $labels = array(
@@ -164,7 +164,7 @@ function stories_post()
     'menu_name' => __('Country category'),
   );
   /*========== Register taxonomi ==========*/
-  register_taxonomy('country_cat', array('story'), array(
+  register_taxonomy('country_cat', array('historias'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,
@@ -188,7 +188,7 @@ function stories_post()
     'menu_name' => __('City category'),
   );
   /*========== Register taxonomi ==========*/
-  register_taxonomy('city_cat', array('story'), array(
+  register_taxonomy('city_cat', array('historias'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,
@@ -212,7 +212,7 @@ function stories_post()
     'menu_name' => __('Ecosystem category'),
   );
   /*========== Register taxonomi ==========*/
-  register_taxonomy('ecosystem_cat', array('story'), array(
+  register_taxonomy('ecosystem_cat', array('historias'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,
@@ -236,7 +236,7 @@ function stories_post()
     'menu_name' => __('Species category'),
   );
   /*========== Register taxonomi ==========*/
-  register_taxonomy('species_cat', array('story'), array(
+  register_taxonomy('species_cat', array('historias'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,
@@ -260,11 +260,11 @@ add_action('rest_api_init', function () {
 /*============ ============*/
 function stories_list_handler($request){
   $params = $request->get_params();
-  $totalPosts = wp_count_posts("story");
+  $totalPosts = wp_count_posts("historias");
   $count = $totalPosts ? $totalPosts->publish : 0;
   $formatedCards = [];
   $query = [
-    'post_type'         => 'story',
+    'post_type'         => 'historias',
     'post_status'       => 'publish',
     'tax_query' => array(
       'relation' => 'AND',
@@ -309,11 +309,11 @@ function stories_list_handler($request){
   }
 
   $news = new WP_Query($query);
-  $story = array();
+  $historias = array();
   if($news->have_posts()){
     while ($news->have_posts()) {
       $news->the_post();
-      array_push($story, array(
+      array_push($historias, array(
         'title'         => get_the_title(get_the_id()),
         "thumbnail"     => get_the_post_thumbnail_url(get_the_id()),
         "permalink"     => get_permalink(get_the_id()),
@@ -329,7 +329,7 @@ function stories_list_handler($request){
     wp_reset_postdata();
   }
   $total = [];
-  if ($story) :
+  if ($historias) :
     array_push($total, array(
       'have_post' => true,
       'total'     => $count,
@@ -342,6 +342,6 @@ function stories_list_handler($request){
       'posts'     => null,
     ));
   endif;
-  $stories = ['stories' => $story, 'total' => $total];
+  $stories = ['stories' => $historias, 'total' => $total];
   return $stories;
 }

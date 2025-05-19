@@ -91,7 +91,7 @@ $next_post = get_next_post();
                     </div>
                     <div class="end-sticky"></div>
                 </div>
-                <div class="col-12 col-md-5 col-lg-4 mt-5">
+                <div class="col-12 col-md-5 col-lg-4 mt-5 d-block d-md-none">
                     <div class="left-content movil">
                         <div class="content">
                             <div class="post-dates d-flex d-md-none">
