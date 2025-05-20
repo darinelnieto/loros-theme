@@ -346,8 +346,8 @@ function stories_list_handler($request){
   return $stories;
 }
 add_filter('template_include', function ($template) {
-    if (is_page('mi-slug')) {
-        $custom_template = get_template_directory() . '/template-mi-vista.php';
+    if (is_page('historias')) {
+        $custom_template = get_template_directory() . '/templates/stoies-page-template.php';
         if (file_exists($custom_template)) {
             return $custom_template;
         }
