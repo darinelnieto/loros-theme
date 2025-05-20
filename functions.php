@@ -345,3 +345,12 @@ function stories_list_handler($request){
   $stories = ['stories' => $historias, 'total' => $total];
   return $stories;
 }
+add_filter('template_include', function ($template) {
+    if (is_page('mi-slug')) {
+        $custom_template = get_template_directory() . '/template-mi-vista.php';
+        if (file_exists($custom_template)) {
+            return $custom_template;
+        }
+    }
+    return $template;
+});
