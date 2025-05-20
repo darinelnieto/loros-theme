@@ -48,16 +48,19 @@ $next_post = get_next_post();
                             </div>
                             <div class="social-networks d-none d-md-flex">
                                 <ul>
-                                    <li>
-                                        <a href="<?= get_field('facebook_link')['url']; ?>" target="_blank">
-                                            <?= get_field('facebook_label', 'option'); ?>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="<?= get_field('instagram_link')['url']; ?>" target="_blank">
-                                            <?= get_field('instagram_label', 'option'); ?>
-                                        </a>
-                                    </li>
+                                    <?php if(get_field('facebook_link')): ?>
+                                        <li>
+                                            <a href="<?= get_field('facebook_link')['url']; ?>" target="_blank">
+                                                <?= get_field('facebook_label', 'option'); ?>
+                                            </a>
+                                        </li>
+                                    <?php endif; if(get_field('instagram_link')): ?>
+                                        <li>
+                                            <a href="<?= get_field('instagram_link')['url']; ?>" target="_blank">
+                                                <?= get_field('instagram_label', 'option'); ?>
+                                            </a>
+                                        </li>
+                                    <?php endif; ?>
                                 </ul>
                             </div>
                             <nav class="post-navigation d-none d-md-flex">
@@ -128,7 +131,7 @@ $next_post = get_next_post();
                                                 <?= get_field('facebook_label', 'option'); ?>
                                             </a>
                                         </li>
-                                    <?php endif; if( get_field('instagram_link')): ?>
+                                    <?php endif; if(get_field('instagram_link')): ?>
                                         <li>
                                             <a href="<?= get_field('instagram_link')['url']; ?>" target="_blank">
                                                 <?= get_field('instagram_label', 'option'); ?>
