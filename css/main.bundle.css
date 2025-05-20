@@ -1055,14 +1055,14 @@ footer .contact .email-content a {
 }
 
 #stories-page-template-686681 {
-  padding-top: 3rem;
+  padding-top: 6rem;
   background: rgba(164, 164, 164, 0.3);
   /*=============== Posts ==============*/
 }
 #stories-page-template-686681 .banner {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 65vh;
 }
 #stories-page-template-686681 .banner img {
   width: 100%;
@@ -1084,12 +1084,21 @@ footer .contact .email-content a {
 #stories-page-template-686681 .banner .container p {
   color: #ffffff;
   font-family: "Avenir-light";
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 0;
-  max-width: 500px;
 }
 #stories-page-template-686681 .banner .container p strong {
   font-family: "Gotham Book";
+}
+@media (max-width: 768px) {
+  #stories-page-template-686681 .banner .container {
+    top: inherit;
+    transform: translate(-50%, -30%);
+    bottom: 0;
+  }
+  #stories-page-template-686681 .banner .container p {
+    font-size: 1rem;
+  }
 }
 #stories-page-template-686681 .stories {
   padding: 3rem 0;

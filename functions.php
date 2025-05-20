@@ -345,12 +345,3 @@ function stories_list_handler($request){
   $stories = ['stories' => $historias, 'total' => $total];
   return $stories;
 }
-add_filter('template_include', function ($template) {
-    if (is_page('historias')) {
-        $custom_template = get_template_directory() . '/templates/stoies-page-template.php';
-        if (file_exists($custom_template)) {
-            return $custom_template;
-        }
-    }
-    return $template;
-});
