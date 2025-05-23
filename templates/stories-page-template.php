@@ -2,7 +2,7 @@
 <?php
 /**
  * 
- * Template Name: relatos-page
+ * Template Name: stories-page
  * 
  */
 if ( ! defined( 'ABSPATH' ) ) {
