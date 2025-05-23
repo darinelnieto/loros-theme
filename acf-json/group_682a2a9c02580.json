@@ -1,6 +1,6 @@
 {
     "key": "group_682a2a9c02580",
-    "title": "Stories page",
+    "title": "relatos page",
     "fields": [
         {
             "key": "field_682a2a9cc0d84",
@@ -28,6 +28,26 @@
             "preview_size": "medium"
         },
         {
+            "key": "field_6830de80bd252",
+            "label": "Title",
+            "name": "title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_682a2af7c0d85",
             "label": "Text after title",
             "name": "text_after_title",
@@ -53,7 +73,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "templates\/stories-page-template.php"
+                "value": "templates\/relatos-page-template.php"
             }
         ]
     ],
@@ -66,5 +86,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1747712197
+    "modified": 1748033182
 }

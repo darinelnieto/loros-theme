@@ -1,7 +1,7 @@
 {
     "post_types": {
         "experiences": [],
-        "historias": []
+        "relatos": []
     },
     "taxonomies": {
         "category": [],
@@ -13,6 +13,6 @@
     "admin_pages": [
         "toplevel_page_acf-options-footer",
         "toplevel_page_acf-options-experiences",
-        "theme-settings_page_acf-options-stories-globals"
+        "theme-settings_page_acf-options-relatos-globals"
     ]
 }

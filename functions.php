@@ -113,8 +113,8 @@ if (function_exists('acf_add_options_page')){
 		'parent_slug'   => 'theme-settings',
 	));
   acf_add_options_sub_page(array(
-		'page_title'     => 'Stories globals',
-		'menu_title'     => 'Stories globals',
+		'page_title'     => 'relatos globals',
+		'menu_title'     => 'relatos globals',
 		'parent_slug'   => 'theme-settings',
 	));
 }
@@ -133,21 +133,21 @@ if (function_exists('acf_add_options_page')){
       'parent_slug'   => 'option-experiences',
     ));
 }
-/*=================== Stories =====================*/
+/*=================== relatos =====================*/
 add_theme_support('post-thumbnails');
-add_post_type_support( 'historias', 'thumbnail' );
-function stories_post()
+add_post_type_support( 'relatos', 'thumbnail' );
+function relatos_post()
 {
   /*====== Argument post type =====*/
   $args = array(
     'public' => true,
     'has_archive' => true,
-    'label'  => 'Historias',
+    'label'  => 'relatos',
     'menu_icon' => 'dashicons-embed-photo',
     'supports' => ['title', 'editor', 'thumbnail'],
   );
   /*============ Register post type ============*/
-  register_post_type('historias', $args);
+  register_post_type('relatos', $args);
   /*============ Register taxonomy of fqas ============*/
    /*============ Argument taxonimy ============*/
    $labels = array(
@@ -164,7 +164,7 @@ function stories_post()
     'menu_name' => __('Country category'),
   );
   /*========== Register taxonomi ==========*/
-  register_taxonomy('country_cat', array('historias'), array(
+  register_taxonomy('country_cat', array('relatos'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,
@@ -188,7 +188,7 @@ function stories_post()
     'menu_name' => __('City category'),
   );
   /*========== Register taxonomi ==========*/
-  register_taxonomy('city_cat', array('historias'), array(
+  register_taxonomy('city_cat', array('relatos'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,
@@ -212,7 +212,7 @@ function stories_post()
     'menu_name' => __('Ecosystem category'),
   );
   /*========== Register taxonomi ==========*/
-  register_taxonomy('ecosystem_cat', array('historias'), array(
+  register_taxonomy('ecosystem_cat', array('relatos'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,
@@ -236,7 +236,7 @@ function stories_post()
     'menu_name' => __('Species category'),
   );
   /*========== Register taxonomi ==========*/
-  register_taxonomy('species_cat', array('historias'), array(
+  register_taxonomy('species_cat', array('relatos'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,
@@ -246,25 +246,25 @@ function stories_post()
     'rewrite' => array('slug' => 'species_cat'),
   ));
 };
-add_action('init', 'stories_post', 3);
-/*============== Read more stories =============*/
+add_action('init', 'relatos_post', 3);
+/*============== Read more relatos =============*/
 add_action('rest_api_init', function () {
-  register_rest_route('stories', '/list', array(
+  register_rest_route('relatos', '/list', array(
     array(
       'methods'               => WP_REST_Server::READABLE,
-      'callback'              => 'stories_list_handler',
+      'callback'              => 'relatos_list_handler',
       'permission_callback'   => '__return_true',
     )
   ));
 });
 /*============ ============*/
-function stories_list_handler($request){
+function relatos_list_handler($request){
   $params = $request->get_params();
-  $totalPosts = wp_count_posts("historias");
+  $totalPosts = wp_count_posts("relatos");
   $count = $totalPosts ? $totalPosts->publish : 0;
   $formatedCards = [];
   $query = [
-    'post_type'         => 'historias',
+    'post_type'         => 'relatos',
     'post_status'       => 'publish',
     'tax_query' => array(
       'relation' => 'AND',
@@ -309,11 +309,11 @@ function stories_list_handler($request){
   }
 
   $news = new WP_Query($query);
-  $historias = array();
+  $relatos = array();
   if($news->have_posts()){
     while ($news->have_posts()) {
       $news->the_post();
-      array_push($historias, array(
+      array_push($relatos, array(
         'title'         => get_the_title(get_the_id()),
         "thumbnail"     => get_the_post_thumbnail_url(get_the_id()),
         "permalink"     => get_permalink(get_the_id()),
@@ -329,7 +329,7 @@ function stories_list_handler($request){
     wp_reset_postdata();
   }
   $total = [];
-  if ($historias) :
+  if ($relatos) :
     array_push($total, array(
       'have_post' => true,
       'total'     => $count,
@@ -342,6 +342,6 @@ function stories_list_handler($request){
       'posts'     => null,
     ));
   endif;
-  $stories = ['stories' => $historias, 'total' => $total];
-  return $stories;
+  $relatos = ['relatos' => $relatos, 'total' => $total];
+  return $relatos;
 }

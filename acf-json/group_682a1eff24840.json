@@ -1,6 +1,6 @@
 {
     "key": "group_682a1eff24840",
-    "title": "Stories",
+    "title": "relatos",
     "fields": [
         {
             "key": "field_682a1eff69067",
@@ -80,7 +80,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "historias"
+                "value": "relatos"
             }
         ]
     ],

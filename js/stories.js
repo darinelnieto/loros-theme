@@ -5,11 +5,11 @@ var price = '';
 var the_prices = [];
 var prices = '';
 $(()=>{
-    get_stories();
+    get_relatos();
 })
 function read_more(){
     if(curent_page < pages){
-        get_stories();
+        get_relatos();
     }
 }
 function validate(){
@@ -19,8 +19,8 @@ function validate(){
 }
 function print_card(resp){
     console.log(resp);
-    for(item of resp.stories){
-        $('#stories-list').append(`
+    for(item of resp.relatos){
+        $('#relatos-list').append(`
             <div class="col-12 col-md-6 col-lg-4 mb-4">
                 <a href="${item.permalink}">
                     <div class="card-posts">
@@ -43,7 +43,7 @@ function print_card(resp){
     }
 }
 // Read all
-function get_stories(){
+function get_relatos(){
     if(curent_page < pages){
         curent_page++;
     }

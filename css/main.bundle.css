@@ -1054,102 +1054,102 @@ footer .contact .email-content a {
   margin-bottom: 0;
 }
 
-#stories-page-template-686681 {
+#relatos-page-template-686681 {
   padding-top: 6rem;
   background: rgba(164, 164, 164, 0.3);
   /*=============== Posts ==============*/
 }
-#stories-page-template-686681 .banner {
+#relatos-page-template-686681 .banner {
   position: relative;
   width: 100%;
   height: 65vh;
 }
-#stories-page-template-686681 .banner img {
+#relatos-page-template-686681 .banner img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-#stories-page-template-686681 .banner .container {
+#relatos-page-template-686681 .banner .container {
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -60%);
   z-index: 1;
 }
-#stories-page-template-686681 .banner .container h1 {
+#relatos-page-template-686681 .banner .container h1 {
   color: #ffffff;
   font-family: "Gotham-Black";
 }
-#stories-page-template-686681 .banner .container p {
+#relatos-page-template-686681 .banner .container p {
   color: #ffffff;
   font-family: "Avenir-light";
   font-size: 1.2rem;
   margin-bottom: 0;
 }
-#stories-page-template-686681 .banner .container p strong {
+#relatos-page-template-686681 .banner .container p strong {
   font-family: "Gotham Book";
 }
 @media (max-width: 768px) {
-  #stories-page-template-686681 .banner .container {
+  #relatos-page-template-686681 .banner .container {
     top: inherit;
     transform: translate(-50%, -30%);
     bottom: 0;
   }
-  #stories-page-template-686681 .banner .container p {
+  #relatos-page-template-686681 .banner .container p {
     font-size: 1rem;
   }
 }
-#stories-page-template-686681 .stories {
+#relatos-page-template-686681 .relatos {
   padding: 3rem 0;
 }
-#stories-page-template-686681 .stories #stories-list {
+#relatos-page-template-686681 .relatos #relatos-list {
   margin-bottom: 2rem;
 }
-#stories-page-template-686681 .stories #stories-list a {
+#relatos-page-template-686681 .relatos #relatos-list a {
   text-decoration: none;
 }
-#stories-page-template-686681 .stories #stories-list a .card-posts {
+#relatos-page-template-686681 .relatos #relatos-list a .card-posts {
   display: flex;
   flex-direction: column;
   background: #ffffff;
   height: 100%;
 }
-#stories-page-template-686681 .stories #stories-list a .card-posts .image-contain {
+#relatos-page-template-686681 .relatos #relatos-list a .card-posts .image-contain {
   width: 100%;
   height: 200px;
 }
-#stories-page-template-686681 .stories #stories-list a .card-posts .image-contain img {
+#relatos-page-template-686681 .relatos #relatos-list a .card-posts .image-contain img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-#stories-page-template-686681 .stories #stories-list a .card-posts .text-contain {
+#relatos-page-template-686681 .relatos #relatos-list a .card-posts .text-contain {
   padding: 10px;
 }
-#stories-page-template-686681 .stories #stories-list a .card-posts .text-contain .name-post {
+#relatos-page-template-686681 .relatos #relatos-list a .card-posts .text-contain .name-post {
   font-size: 22px;
   color: #797D23;
   font-family: "Gotham-Black";
 }
-#stories-page-template-686681 .stories #stories-list a .card-posts .text-contain .description {
+#relatos-page-template-686681 .relatos #relatos-list a .card-posts .text-contain .description {
   font-family: "Gotham Book";
   color: #606060;
   font-size: 16px;
   margin-bottom: 0;
   margin-bottom: 10px;
 }
-#stories-page-template-686681 .stories #stories-list a .card-posts .text-contain .label-text {
+#relatos-page-template-686681 .relatos #relatos-list a .card-posts .text-contain .label-text {
   font-family: "Gotham Book";
   color: #606060;
   font-size: 14px;
   margin-bottom: 0;
 }
-#stories-page-template-686681 .stories #stories-list a .card-posts .text-contain .label-text strong {
+#relatos-page-template-686681 .relatos #relatos-list a .card-posts .text-contain .label-text strong {
   font-family: "Gotham-Black";
 }
-#stories-page-template-686681 .stories #stories-list a .card-posts .text-contain .read-more-text {
+#relatos-page-template-686681 .relatos #relatos-list a .card-posts .text-contain .read-more-text {
   margin-top: 10px;
   color: #707070;
   font-family: "Avenir-light";
@@ -1158,10 +1158,10 @@ footer .contact .email-content a {
   text-align: right;
   transition: 0.2s;
 }
-#stories-page-template-686681 .stories #stories-list a .card-posts:hover .text-contain .read-more-text {
+#relatos-page-template-686681 .relatos #relatos-list a .card-posts:hover .text-contain .read-more-text {
   color: #082808;
 }
-#stories-page-template-686681 .stories .read-more {
+#relatos-page-template-686681 .relatos .read-more {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1177,7 +1177,7 @@ footer .contact .email-content a {
   font-family: 18px;
   transition: 0.2s;
 }
-#stories-page-template-686681 .stories .read-more:hover {
+#relatos-page-template-686681 .relatos .read-more:hover {
   background: #797D23;
   color: #ffffff;
 }

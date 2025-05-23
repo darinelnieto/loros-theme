@@ -1,6 +1,6 @@
 {
     "key": "group_682b0ae912183",
-    "title": "Single stories",
+    "title": "Single relatos",
     "fields": [
         {
             "key": "field_682b0ae995930",
@@ -148,7 +148,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "acf-options-stories-globals"
+                "value": "acf-options-relatos-globals"
             }
         ]
     ],
