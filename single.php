@@ -15,7 +15,7 @@ switch ($posttype) {
 	case 'experiences':
 		get_template_part('templates/experiences-template');
 	break;
-	case 'relatos':
+	case 'relato':
 		get_template_part('templates/single-strory-template');
 	break;
 }

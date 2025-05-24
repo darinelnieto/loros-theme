@@ -135,19 +135,19 @@ if (function_exists('acf_add_options_page')){
 }
 /*=================== relatos =====================*/
 add_theme_support('post-thumbnails');
-add_post_type_support( 'relatos', 'thumbnail' );
+add_post_type_support( 'relato', 'thumbnail' );
 function relatos_post()
 {
   /*====== Argument post type =====*/
   $args = array(
     'public' => true,
     'has_archive' => true,
-    'label'  => 'relatos',
+    'label'  => 'Relatos',
     'menu_icon' => 'dashicons-embed-photo',
     'supports' => ['title', 'editor', 'thumbnail'],
   );
   /*============ Register post type ============*/
-  register_post_type('relatos', $args);
+  register_post_type('relato', $args);
   /*============ Register taxonomy of fqas ============*/
    /*============ Argument taxonimy ============*/
    $labels = array(
@@ -164,7 +164,7 @@ function relatos_post()
     'menu_name' => __('Country category'),
   );
   /*========== Register taxonomi ==========*/
-  register_taxonomy('country_cat', array('relatos'), array(
+  register_taxonomy('country_cat', array('relato'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,
@@ -188,7 +188,7 @@ function relatos_post()
     'menu_name' => __('City category'),
   );
   /*========== Register taxonomi ==========*/
-  register_taxonomy('city_cat', array('relatos'), array(
+  register_taxonomy('city_cat', array('relato'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,
@@ -212,7 +212,7 @@ function relatos_post()
     'menu_name' => __('Ecosystem category'),
   );
   /*========== Register taxonomi ==========*/
-  register_taxonomy('ecosystem_cat', array('relatos'), array(
+  register_taxonomy('ecosystem_cat', array('relato'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,
@@ -236,7 +236,7 @@ function relatos_post()
     'menu_name' => __('Species category'),
   );
   /*========== Register taxonomi ==========*/
-  register_taxonomy('species_cat', array('relatos'), array(
+  register_taxonomy('species_cat', array('relato'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,
@@ -260,11 +260,11 @@ add_action('rest_api_init', function () {
 /*============ ============*/
 function relatos_list_handler($request){
   $params = $request->get_params();
-  $totalPosts = wp_count_posts("relatos");
+  $totalPosts = wp_count_posts("relato");
   $count = $totalPosts ? $totalPosts->publish : 0;
   $formatedCards = [];
   $query = [
-    'post_type'         => 'relatos',
+    'post_type'         => 'relato',
     'post_status'       => 'publish',
     'tax_query' => array(
       'relation' => 'AND',
