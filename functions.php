@@ -142,7 +142,7 @@ function relatos_post()
   $args = array(
     'public' => true,
     'has_archive' => true,
-    'label'  => 'Relatos',
+    'label'  => 'Relato',
     'menu_icon' => 'dashicons-embed-photo',
     'supports' => ['title', 'editor', 'thumbnail'],
   );
