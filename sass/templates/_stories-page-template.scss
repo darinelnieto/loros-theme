@@ -75,6 +75,10 @@
                             font-size: 16px;
                             margin-bottom: 0;
                             margin-bottom: 10px;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
                         }
                         .label-text{
                             font-family: 'Gotham Book';

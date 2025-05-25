@@ -92,6 +92,10 @@ $next_post = get_next_post();
                             <?= the_content(); ?>
                         </div>
                     </div>
+                    <div class="reflection">
+                        <h2><?= get_field('reflection_text', 'option'); ?></h2>
+                        <p><?= get_field('short_description'); ?></p>
+                    </div>
                     <div class="end-sticky"></div>
                 </div>
                 <div class="col-12 col-md-5 col-lg-4 mt-5 d-block d-md-none">

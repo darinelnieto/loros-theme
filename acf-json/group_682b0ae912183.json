@@ -1,6 +1,6 @@
 {
     "key": "group_682b0ae912183",
-    "title": "Single relatos",
+    "title": "Single stories",
     "fields": [
         {
             "key": "field_682b0ae995930",
@@ -141,6 +141,26 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_68329f6445354",
+            "label": "Reflection text",
+            "name": "reflection_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -161,5 +181,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1747654774
+    "modified": 1748148152
 }

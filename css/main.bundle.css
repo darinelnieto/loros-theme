@@ -1053,6 +1053,23 @@ footer .contact .email-content a {
 #single-strory-template-dfb0a9 .post-content .description p:last-child {
   margin-bottom: 0;
 }
+#single-strory-template-dfb0a9 .reflection {
+  margin-top: 1rem;
+  background: #ffffff;
+  padding: 1rem;
+}
+#single-strory-template-dfb0a9 .reflection h2, #single-strory-template-dfb0a9 .reflection h3, #single-strory-template-dfb0a9 .reflection h4, #single-strory-template-dfb0a9 .reflection h5, #single-strory-template-dfb0a9 .reflection h6 {
+  font-family: "Gotham-Black";
+  color: #797D23;
+}
+#single-strory-template-dfb0a9 .reflection p {
+  font-family: "Avenir-light";
+  color: #707070;
+  font-size: 18px;
+}
+#single-strory-template-dfb0a9 .reflection p strong, #single-strory-template-dfb0a9 .reflection p b {
+  font-family: "Avenir-medium";
+}
 
 #relatos-page-template-686681 {
   padding-top: 6rem;
@@ -1139,6 +1156,10 @@ footer .contact .email-content a {
   font-size: 16px;
   margin-bottom: 0;
   margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 #relatos-page-template-686681 .relatos #relatos-list a .card-posts .text-contain .label-text {
   font-family: "Gotham Book";

@@ -114,4 +114,21 @@
             }
         }
     }
+    .reflection{
+        margin-top: 1rem;
+        background: #ffffff;
+        padding: 1rem;
+        h2, h3, h4, h5, h6{
+            font-family: 'Gotham-Black';
+            color: #797D23;
+        }
+        p{
+            font-family: 'Avenir-light';
+            color: #707070;
+            font-size: 18px;
+            strong, b{
+                font-family: 'Avenir-medium';
+            }
+        }
+    }
 }
