@@ -940,6 +940,7 @@ footer .contact .email-content a {
   padding-top: 11rem;
   padding-bottom: 3rem;
   background: rgba(164, 164, 164, 0.3);
+  /*========== Show all ==========*/
 }
 #single-strory-template-dfb0a9 .left-content {
   position: relative;
@@ -1022,6 +1023,11 @@ footer .contact .email-content a {
     width: 310px;
   }
 }
+@media (min-width: 1500px) {
+  #single-strory-template-dfb0a9 .left-content .content.sticky {
+    width: 21.3541666667vw;
+  }
+}
 #single-strory-template-dfb0a9 .post-content {
   display: flex;
   flex-direction: column;
@@ -1069,6 +1075,27 @@ footer .contact .email-content a {
 }
 #single-strory-template-dfb0a9 .reflection p strong, #single-strory-template-dfb0a9 .reflection p b {
   font-family: "Avenir-medium";
+}
+#single-strory-template-dfb0a9 .show-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 30px;
+  border: 1px solid #797D23;
+  background: #ffffff;
+  font-family: "Gotham Book";
+  font-size: 18px;
+  color: #797D23;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  transition: 0.2s;
+}
+#single-strory-template-dfb0a9 .show-all:hover {
+  background: #797D23;
+  color: #ffffff;
 }
 
 #relatos-page-template-686681 {

@@ -79,6 +79,9 @@
             @media(max-width:1080px){
                 width: 310px;
             }
+            @media(min-width:1500px){
+                width: calc((410 * 100) / 1920) * 1vw;
+            }
         }
     }
     .post-content{
@@ -129,6 +132,28 @@
             strong, b{
                 font-family: 'Avenir-medium';
             }
+        }
+    }
+    /*========== Show all ==========*/
+    .show-all{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        height: 30px;
+        border: 1px solid #797D23;
+        background: #ffffff;
+        font-family: 'Gotham Book';
+        font-size: 18px;
+        color: #797D23;
+        border-radius: 20px;
+        text-decoration: none;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+        transition: .2s;
+        &:hover{
+            background: #797D23;
+            color: #ffffff;
         }
     }
 }

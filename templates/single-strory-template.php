@@ -11,6 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 $prev_post = get_previous_post();
 $next_post = get_next_post();
+$show_all = get_field('show_all', 'option');
 ?>
 <main id="single-strory-template-dfb0a9">
     <section>
@@ -63,6 +64,11 @@ $next_post = get_next_post();
                                     <?php endif; ?>
                                 </ul>
                             </div>
+                            <?php if($show_all): ?>
+                                <a href="<?= $show_all; ?>" class="show-all d-none d-md-flex">
+                                    <span><?= get_field('text_show_all', 'option'); ?></span>
+                                </a>
+                            <?php endif; ?>
                             <nav class="post-navigation d-none d-md-flex">
                                 <?php if ($prev_post): ?>
                                     <div class="nav-previous">
@@ -144,6 +150,11 @@ $next_post = get_next_post();
                                     <?php endif; ?>
                                 </ul>
                             </div>
+                            <?php if($show_all): ?>
+                                <a href="<?= $show_all; ?>" class="show-all d-flex d-md-none">
+                                    <span><?= get_field('text_show_all', 'option'); ?></span>
+                                </a>
+                            <?php endif; ?>
                             <nav class="post-navigation d-flex d-md-none">
                                 <?php if ($prev_post): ?>
                                     <div class="nav-previous">
