@@ -1016,17 +1016,6 @@ footer .contact .email-content a {
 #single-strory-template-dfb0a9 .left-content .content.sticky {
   position: fixed;
   top: 0;
-  width: 28.3854166667vw;
-}
-@media (max-width: 1080px) {
-  #single-strory-template-dfb0a9 .left-content .content.sticky {
-    width: 310px;
-  }
-}
-@media (min-width: 1500px) {
-  #single-strory-template-dfb0a9 .left-content .content.sticky {
-    width: 21.3541666667vw;
-  }
 }
 #single-strory-template-dfb0a9 .post-content {
   display: flex;

@@ -17,7 +17,7 @@ $show_all = get_field('show_all', 'option');
     <section>
         <div class="container">
             <div class="row body-animation">
-                <div class="col-12 col-md-5 col-lg-4">
+                <div class="col-12 col-md-5 col-lg-4 sticky-contain">
                     <div class="left-content">
                         <div class="content">
                             <h1><?= the_title(); ?></h1>
@@ -184,11 +184,12 @@ $show_all = get_field('show_all', 'option');
     $(window).scroll(function() {
         var screen = $(window).width();
         if (screen > 769) {
+            var width_content = $('.sticky-contain').width()+'px';
             var windowScrol = $(window).scrollTop();
             var position = $('.left-content').offset().top;
             var heightContent = $('.end-sticky').offset().top - 400;
             if (windowScrol >= position) {
-                $('.left-content .content').addClass('sticky');
+                $('.left-content .content').addClass('sticky').css({'width': width_content});
             }
             if (windowScrol < position) {
                 $('.left-content .content').removeClass('sticky');

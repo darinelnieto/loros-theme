@@ -75,13 +75,6 @@
         .content.sticky{
             position: fixed;
             top: 0;
-            width: calc((545 * 100) / 1920) * 1vw;
-            @media(max-width:1080px){
-                width: 310px;
-            }
-            @media(min-width:1500px){
-                width: calc((410 * 100) / 1920) * 1vw;
-            }
         }
     }
     .post-content{
