@@ -272,7 +272,7 @@ function relatos_list_handler($request){
     'meta_query' => array(),
     'posts_per_page'    => $request['posts_per_page'] ? $request['posts_per_page'] : -1,
     'offset'            => $request['offset'] ? $request['offset'] : 0,
-    'orderby'           => 'rand',
+    'order'           => 'ASC',
   ];
   // By country
   if ($request['country']) {

@@ -1,6 +1,6 @@
 var pages = 1;
 var curent_page = 1;
-var post_per_page = 30;
+var post_per_page = 50;
 var price = '';
 var the_prices = [];
 var prices = '';
