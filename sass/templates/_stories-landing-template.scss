@@ -1,0 +1,124 @@
+#stories-landing-template-48285e {
+    padding-top: 6rem;
+    background: rgba(164, 164, 164, .3);
+    .banner{
+        position: relative;
+        width: 100%;
+        height: 65vh;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .container{
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+            z-index: 1;
+            h1{
+                color: #ffffff;
+                font-family: 'Gotham-Black';
+            }
+            p{
+                color: #ffffff;
+                font-family: "Avenir-light";
+                font-size: 1.2rem;
+                margin-bottom: 0;
+                strong{
+                    font-family: 'Gotham Book';
+                }
+            }
+            @media(max-width:768px){
+                top: inherit;
+                transform: translate(-50%, -30%);
+                bottom: 0;
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .stories{
+        padding: 3rem 0;
+        .selection-methods{
+            margin-bottom: 3rem;
+            h2{
+                font-family: 'Gotham-Black';
+                font-size: 1.8rem;
+                color: #797D23;
+            }
+            p{
+                font-family: "Avenir-light";
+                font-size: 1.2rem;
+                margin-bottom: 0;
+                color: #606060;
+            }
+        }
+        .card-story{
+            text-decoration: none;
+            .card-posts{
+                display: flex;
+                flex-direction: column;
+                background: #ffffff;
+                height: 100%;
+                .image-contain{
+                    width: 100%;
+                    height: 200px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+                .text-contain{
+                    padding: 10px;
+                    .name-post{
+                        font-size: 22px;
+                        color: #797D23;
+                        font-family: 'Gotham-Black';
+                    }
+                    .description{
+                        font-family: 'Gotham Book';
+                        color: #606060;
+                        font-size: 16px;
+                        margin-bottom: 0;
+                        margin-bottom: 10px;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                    }
+                    .label-text{
+                        font-family: 'Gotham Book';
+                        color: #606060;
+                        font-size: 14px;
+                        margin-bottom: 0;
+                        
+                        strong{
+                            font-family: 'Gotham-Black';
+                        }
+                    }
+                    .read-more-text{
+                        margin-top: 10px;
+                        color: #707070;
+                        font-family: 'Avenir-light';
+                        font-size: 14px;
+                        display: block;
+                        text-align: right;
+                        transition: .2s;
+                    }
+                }
+                &:hover{
+                    .text-contain{
+                        .read-more-text{
+                            color: #082808;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

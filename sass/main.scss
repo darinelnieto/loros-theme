@@ -13,6 +13,7 @@
 @use "./partials/content-header";
 @use "partials/hello";
 // #DittoTemplates
+@use "./templates/stories-landing-template";
 @use "./templates/single-strory-template";
 @use "./templates/stories-page-template";
 @use "./templates/how-to-get-template";

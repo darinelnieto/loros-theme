@@ -314,16 +314,16 @@ function relatos_list_handler($request){
     while ($news->have_posts()) {
       $news->the_post();
       array_push($relatos, array(
-        'title'         => get_the_title(get_the_id()),
-        "thumbnail"     => get_the_post_thumbnail_url(get_the_id()),
-        "permalink"     => get_permalink(get_the_id()),
-        "author" => get_field('author', get_the_id()),
-        "short_description" => get_field('short_description', get_the_id()),
-        'country'            => get_the_terms(get_the_id(), 'country_cat')[0]->name,
-        'city'               => get_the_terms(get_the_id(), 'city_cat')[0]->name,
-        'ecosystem'          => get_the_terms(get_the_id(), 'ecosystem_cat')[0]->name,
-        'species'            => get_the_terms(get_the_id(), 'species_cat')[0]->name,
-        'post_date'          => get_the_date('Y-m-d', get_the_id()),
+        'title' => get_the_title(get_the_id()),
+        'thumbnail' => get_the_post_thumbnail_url(get_the_id()),
+        'permalink' => get_permalink(get_the_id()),
+        'author' => get_field('author', get_the_id()),
+        'short_description' => get_field('short_description', get_the_id()),
+        'country' => ($terms = get_the_terms(get_the_id(), 'country_cat')) ? $terms[0]->name : '',
+        'city' => ($terms = get_the_terms(get_the_id(), 'city_cat')) ? $terms[0]->name : '',
+        'ecosystem' => ($terms = get_the_terms(get_the_id(), 'ecosystem_cat')) ? $terms[0]->name : '',
+        'species' => ($terms = get_the_terms(get_the_id(), 'species_cat')) ? $terms[0]->name : '',
+        'post_date' => get_the_date('Y-m-d', get_the_id()),
       ));
     }
     wp_reset_postdata();
