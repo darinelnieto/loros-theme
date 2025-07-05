@@ -29,7 +29,8 @@ $text = get_field('text_after_title');
             <div class="row" id="relatos-list"></div>
             <div class="row">
                 <div class="col-12 text-center">
-                    <span onclick="read_more();" class="read-more">Cargar más</span>
+                    <span onclick="read_more();" class="read-more">
+                        <?php if(get_bloginfo("language") == "en-US"): ?>Load more<?php else: ?>Cargar más<?php endif; ?></span>
                 </div>
             </div>
         </div>
