@@ -37,8 +37,12 @@ $text = get_field('text_after_title');
 </main>
 <script src="<?= get_template_directory_uri() ?>/js/stories.js"></script>
 <script>
-    const rout = _dittoURL_ + "/wp-json/relatos/list";
-    const author_label = '<?= get_field('author_label', 'option'); ?>';
+    <?php if(get_bloginfo("language") == "en-US"): ?>
+        const rout = _dittoURL_ + "/en/wp-json/relatos/list";
+    <?php else: ?>
+        const rout = _dittoURL_ + "/wp-json/relatos/list";
+    <?php endif; ?>
+    const author_label = '<?= get_field('author_label', 'option'); ?>'; 
     const location_label = '<?= get_field('location_label', 'option'); ?>';
     const species_label = '<?= get_field('species_label', 'option'); ?>';
     const cta_text = '<?= get_field('cta_text', 'option'); ?>';
