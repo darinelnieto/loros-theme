@@ -32,25 +32,6 @@ if ( ! defined( 'ABSPATH' ) ) {
     const _dittoURI_ = "<?= get_template_directory_uri() ?>",
           _dittoURL_ = "<?= get_site_url() ?>";
   </script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11463504762">
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'AW-11463504762');
-  </script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NYX1WQEQMV"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-NYX1WQEQMV');
-  </script>
 </head>
 
 <body <?php body_class(); ?>>
