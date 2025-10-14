@@ -345,3 +345,28 @@ function relatos_list_handler($request){
   $relatos = ['relatos' => $relatos, 'total' => $total];
   return $relatos;
 }
+// Joinchat
+add_action('wp_footer', function() {
+    if ( function_exists('wpm_get_language') ) {
+        $lang = wpm_get_language();
+        if ($lang === 'es') {
+            // Botón en español
+            echo "<script>
+                window.joinchatSettings = {
+                    phone: '573206960469',
+                    message: 'Hola 👋, gracias por escribir a Loros Wildlife Sanctuary. ¿En qué podemos ayudarte? 🦜',
+                    buttonText: 'Chatea con nosotros'
+                };
+            </script>";
+        } elseif ($lang === 'en') {
+            // Botón en inglés
+            echo "<script>
+                window.joinchatSettings = {
+                    phone: '573206960469',
+                    message: 'Hi 👋, thanks for contacting Loros Wildlife Sanctuary. How can we help you? 🦜',
+                    buttonText: 'Chat with us'
+                };
+            </script>";
+        }
+    }
+});
