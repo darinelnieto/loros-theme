@@ -11,6 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 $pdf = get_field('pdf_download');
 $gallery = get_field('gallery_image');
+$reviews = get_field('reviews', 'option');
 ?>
 <main id="experiences-template-ff0b59">
     <!-- Experience content -->
@@ -45,6 +46,27 @@ $gallery = get_field('gallery_image');
                             <div class="content-form mt-4">
                                 <?= do_shortcode(get_field('shortcode_form', 'option')); ?>
                             </div>
+                            <?php if(!empty($reviews)): ?>
+                                <div class="reviews">
+                                    <?php foreach($reviews as $item): $img = $item['logo']; ?>
+                                        <div class="item">
+                                            <?php if(!empty($img)): ?>
+                                                <img src="<?= $img['url']; ?>" alt="<?= $img['title']; ?>" width="<?= $img['width']; ?>" height="<?= $img['height']; ?>">
+                                            <?php endif; ?>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="224.875" height="37.486" viewBox="0 0 224.875 37.486">
+                                                <g id="Grupo_51" data-name="Grupo 51" transform="translate(0 0)">
+                                                    <path id="star-1" data-name="Trazado 21" d="M19.707,0,15.055,14.318H0l12.179,8.85L7.527,37.486l12.18-8.85,12.181,8.85L27.235,23.168l12.18-8.85H24.36Z" fill="#fbd349"/>
+                                                    <path id="star-2" data-name="Trazado 22" d="M66.028,0,61.376,14.318H46.32l12.18,8.85L53.847,37.486l12.181-8.85,12.18,8.85L73.556,23.168l12.179-8.85H70.68Z" fill="#fbd349"/>
+                                                    <path id="star-3" data-name="Trazado 23" d="M112.347,0l-4.652,14.318H92.64l12.179,8.85-4.652,14.318,12.18-8.85,12.181,8.85-4.653-14.318,12.18-8.85H117Z" fill="#fbd349"/>
+                                                    <path id="star-4" data-name="Trazado 24" d="M158.667,0l-4.653,14.318H138.959l12.179,8.85-4.652,14.318,12.181-8.85,12.18,8.85L166.2,23.168l12.179-8.85H163.319Z" fill="#fbd349"/>
+                                                    <path id="star-5" data-name="Trazado 25" d="M205.167,0l-4.652,14.318H185.46l12.179,8.85-4.652,14.318,12.18-8.85,12.18,8.85-4.652-14.318,12.18-8.85H209.819Z" fill="#fbd349"/>
+                                                </g>
+                                            </svg>
+                                            <p class="qualification"><?= $item['qualification']; ?></p>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
