@@ -39,14 +39,14 @@ $email = get_field('email_content', 'option');
                 <?php if($email): $icon = $email['email_icon']; ?>
                 <div class="email-content">
                     <a href="mailto:<?= $email['email']; ?>" target="_blank">
-                        <img src="<?= $icon['url']; ?>" alt="Icono de email" width="<?= $icon['width']; ?>" height="<?= $icon['height']; ?>" loading="lazy">
+                        <img src="<?= $icon['url']; ?>" alt="Icono de email" loading="lazy">
                         <span><?= $email['email']; ?></span>
                     </a>
                 </div>
                 <?php endif; ?>
             </div>
             <div class="col-12 col-md-2">
-                <img src="<?= esc_url( wp_get_attachment_url( get_theme_mod( 'custom_logo' ) ) ); ?>" alt="Logo de la fundación" width="512" height="512" class="logo-footer" loading="lazy">
+                <img src="<?= esc_url( wp_get_attachment_url( get_theme_mod( 'custom_logo' ) ) ); ?>" alt="Logo de la fundación" class="logo-footer" loading="lazy">
             </div>
         </div>
     </div>

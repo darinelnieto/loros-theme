@@ -20,7 +20,7 @@ $page = is_front_page();
             </div>
             <div class="col-12 col-md-6 content-image">
                 <?php $img = get_field('image_forest_nursery'); if(!empty($img)): ?>
-                    <img src="<?= $img['url']; ?>" alt="<?= $img['title']; ?>" width="<?= $img['width']; ?>" height="<?= $img['height']; ?>" loading="lazy">
+                    <img src="<?= $img['url']; ?>" alt="<?= $img['title']; ?>" loading="lazy">
                 <?php endif; ?>
             </div>
         </div>

@@ -15,7 +15,7 @@ $gallery = get_field('gallery_slide');
     <div class="owl-carousel banner-home">
         <?php foreach($gallery as $image): ?>
             <div class="imgae">
-                <img src="<?= $image['url']; ?>" alt="<?= $image['title']; ?>" width="<?= $image['width']; ?>" height="<?= $image['height']; ?>" loading="lazy">
+                <img src="<?= $image['url']; ?>" alt="<?= $image['title']; ?>" loading="lazy">
             </div>
         <?php endforeach; ?>
     </div>

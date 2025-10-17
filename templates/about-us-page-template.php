@@ -19,7 +19,7 @@ $img = get_field('welcome_image');
     <!-- Welcome about us content -->
     <section class="content-welcome">
         <div class="content-image">
-            <img src="<?= $img['url']; ?>" alt="<?= $img['title']; ?>" width="<?= $img['width']; ?>" height="<?= $img['height']; ?>" loading="lazy">
+            <img src="<?= $img['url']; ?>" alt="<?= $img['title']; ?>" loading="lazy">
         </div>
         <div class="content-text">
             <h2 class="mb-4"><?= get_field('welcome_title'); ?></h2>

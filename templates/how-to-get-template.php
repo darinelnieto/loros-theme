@@ -24,7 +24,7 @@ $map = get_field('map');
             <div class="row map">
                 <div class="col-12 content-image">
                     <a href="<?= get_field('url_google_maps_or_waze'); ?>" target="_blank">
-                        <img src="<?= $map['url']; ?>" alt="<?= $map['title']; ?>" width="<?= $map['width']; ?>" height="<?= $map['height'] ?>" loading="lazy">
+                        <img src="<?= $map['url']; ?>" alt="<?= $map['title']; ?>" loading="lazy">
                     </a>
                 </div>
                 <?php if($arrival_type): ?>

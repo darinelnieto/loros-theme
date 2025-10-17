@@ -24,7 +24,7 @@ $experiences = new WP_Query(array('post_type' => 'Experiences', 'post_status' =>
                     ?>
                     <div class="experience">
                         <a href="<?= get_permalink(); ?>">
-                            <img src="<?= $img['url']; ?>" alt="<?= $img['title']; ?>" width="<?= $img['width']; ?>" height="<?= $img['height'] ?>" loading="lazy">
+                            <img src="<?= $img['url']; ?>" alt="<?= $img['title']; ?>" loading="lazy">
                             <div class="name">
                                 <h3><?= the_title($experiences->ID); ?></h3>
                             </div>

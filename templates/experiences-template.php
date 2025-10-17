@@ -25,7 +25,7 @@ $reviews = get_field('reviews', 'option');
                             <div class="gallery owl-carousel">
                                 <?php foreach($gallery as $img): ?>
                                     <div class="item">
-                                        <img src="<?= $img['url']; ?>" alt="<?= $img['title']; ?>" width="<?= $img['width']; ?>" height="<?= $img['height']; ?>" loading="lazy">
+                                        <img src="<?= $img['url']; ?>" alt="<?= $img['title']; ?>" loading="lazy">
                                     </div>
                                 <?php endforeach; ?>
                             </div>
@@ -33,7 +33,7 @@ $reviews = get_field('reviews', 'option');
                         <?= the_content(); ?>
                         <?php if($pdf): $img_pdf = get_field('image_pdf', 'option'); ?>
                             <a href="<?= $pdf; ?>" download>
-                                <img src="<?= $img_pdf['url']; ?>" alt="<?= $img_pdf['title']; ?>" width="<?= $img_pdf['width']; ?>" height="<?= $img_pdf['height']; ?>" loading="lazy">
+                                <img src="<?= $img_pdf['url']; ?>" alt="<?= $img_pdf['title']; ?>" loading="lazy">
                             </a>
                         <?php endif; ?>
                     </div>
@@ -51,7 +51,7 @@ $reviews = get_field('reviews', 'option');
                                     <?php foreach($reviews as $item): $img = $item['logo']; ?>
                                         <div class="item">
                                             <?php if(!empty($img)): ?>
-                                                <img src="<?= $img['url']; ?>" alt="<?= $img['title']; ?>" width="<?= $img['width']; ?>" height="<?= $img['height']; ?>" loading="lazy">
+                                                <img src="<?= $img['url']; ?>" alt="<?= $img['title']; ?>" loading="lazy">
                                             <?php endif; ?>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="224.875" height="37.486" viewBox="0 0 224.875 37.486">
                                                 <g id="Grupo_51" data-name="Grupo 51" transform="translate(0 0)">

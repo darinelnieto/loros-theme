@@ -25,7 +25,7 @@ function print_card(resp){
                 <a href="${item.permalink}">
                     <div class="card-posts">
                         <div class="image-contain">
-                            <img src="${item.thumbnail}" alt="${item.title}" width="300" height="250" loading="lazy">
+                            <img src="${item.thumbnail}" alt="${item.title}" loading="lazy">
                         </div>
                         <div class="text-contain">
                             <h3 class="name-post">${item.title}</h3>

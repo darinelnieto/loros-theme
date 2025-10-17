@@ -18,7 +18,7 @@ $gallery = get_field('gallery_image');
                     <div class="owl-carousel generic-banner">
                         <?php foreach($gallery as $image): ?>
                             <div class="image">
-                                <img src="<?= $image['url']; ?>" alt="<?= $image['title']; ?>" width="<?= $image['width']; ?>" height="<?= $image['height']; ?>" loading="lazy">
+                                <img src="<?= $image['url']; ?>" alt="<?= $image['title']; ?>" loading="lazy">
                             </div>
                         <?php endforeach; ?>
                     </div>

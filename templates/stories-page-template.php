@@ -14,7 +14,7 @@ $text = get_field('text_after_title');
 ?>
 <main id="relatos-page-template-686681">
     <section class="banner">
-        <img src="<?= $banner['url']; ?>" alt="<?= $banner['title']; ?>" width="<?= $banner['width']; ?>" height="<?= $banner['height']; ?>" class="banner" loading="lazy">
+        <img src="<?= $banner['url']; ?>" alt="<?= $banner['title']; ?>" class="banner" loading="lazy">
         <div class="container">
             <div class="row">
                 <div class="col-12">
