@@ -11,6 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 $arrival_type = get_field('arrival_type');
 $from = get_field('from');
+$map = get_field('map');
 ?>
 <main id="how-to-get-template-f3897a">
     <section>
@@ -23,7 +24,7 @@ $from = get_field('from');
             <div class="row map">
                 <div class="col-12 content-image">
                     <a href="<?= get_field('url_google_maps_or_waze'); ?>" target="_blank">
-                        <img src="<?= get_field('map'); ?>" alt="Imagen del mapa">
+                        <img src="<?= $map['url']; ?>" alt="<?= $map['title']; ?>" width="<?= $map['width']; ?>" height="<?= $map['height'] ?>" loading="lazy">
                     </a>
                 </div>
                 <?php if($arrival_type): ?>

@@ -27,7 +27,9 @@ $page = is_front_page();
                 <?php endif; ?>
             </div>
             <div class="col-12 col-md-6 content-loro">
-                <img src="<?= get_field('image_about_us')['url']; ?>" alt="<?= get_field('image_about_us')['title']; ?>">
+                <?php $img = get_field('image_about_us'); if(!empty($img)): ?>
+                    <img src="<?= $img['url']; ?>" alt="<?= $img['title']; ?>" width="<?= $img['width']; ?>" height="<?= $img['height'] ?>" loading="lazy">
+                <?php endif; ?>
             </div>
         </div>
     </div>

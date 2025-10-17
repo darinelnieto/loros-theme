@@ -18,7 +18,7 @@ if($associates):
                 <h2><?= get_field('title_associates'); ?></h2>
                 <div class="content-logos">
                     <?php foreach($associates as $img): ?>
-                        <img src="<?= $img['url']; ?>" alt="<?= $img['title']; ?>">
+                        <img src="<?= $img['url']; ?>" alt="<?= $img['title']; ?>" width="<?= $img['width']; ?>" height="<?= $img['height']; ?>" loading="lazy">
                     <?php endforeach; ?>
                 </div>
             </div>

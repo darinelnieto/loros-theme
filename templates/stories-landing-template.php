@@ -15,7 +15,7 @@ $text = get_field('text_after_title');
 ?>
 <main id="stories-landing-template-48285e">
     <section class="banner">
-        <img src="<?= $banner['url']; ?>" alt="<?= $banner['title']; ?>" width="<?= $banner['width']; ?>" height="<?= $banner['height']; ?>" class="banner">
+        <img src="<?= $banner['url']; ?>" alt="<?= $banner['title']; ?>" width="<?= $banner['width']; ?>" height="<?= $banner['height']; ?>" class="banner" loading="lazy">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -39,7 +39,7 @@ $text = get_field('text_after_title');
                             <a href="<?= get_permalink($story['story']->ID); ?>" class="card-story">
                                 <div class="card-posts">
                                     <div class="image-contain">
-                                        <img src="<?= get_the_post_thumbnail_url($story['story']->ID); ?>" alt="<?= get_the_title($story['story']->ID); ?>">
+                                        <img src="<?= get_the_post_thumbnail_url($story['story']->ID); ?>" alt="<?= get_the_title($story['story']->ID); ?>" width="700" height="500" loading="lazy">
                                     </div>
                                     <div class="text-contain">
                                         <h3 class="name-post"><?= get_the_title($story['story']->ID); ?></h3>

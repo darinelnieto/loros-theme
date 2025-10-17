@@ -29,7 +29,7 @@ $learn_more = get_field('link_what_to_do');
                 <?php endif; ?>
             </div>
             <div class="col-12 col-md-6 content-loro">
-                <img src="<?= $image['url']; ?>" alt="<?= $image['title']; ?>" <?php if($page): ?>class="image-home"<?php endif; ?>>
+                <img src="<?= $image['url']; ?>" alt="<?= $image['title']; ?>" <?php if($page): ?>class="image-home"<?php endif; ?> width="<?= $image['width']; ?>" height="<?= $image['height']; ?>" loading="lazy">
             </div>
         </div>
     </div>

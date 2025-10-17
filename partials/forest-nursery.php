@@ -19,7 +19,9 @@ $page = is_front_page();
                 <a href="<?= get_field('link_forest_nursery'); ?>"><?php if(get_bloginfo("language") == "en-US"): echo "LEARN MORE"; else: echo "VER MÁS"; endif; ?></a>
             </div>
             <div class="col-12 col-md-6 content-image">
-                <img src="<?= get_field('image_forest_nursery')['url']; ?>" alt="<?= get_field('image_forest_nursery')['title']; ?>">
+                <?php $img = get_field('image_forest_nursery'); if(!empty($img)): ?>
+                    <img src="<?= $img['url']; ?>" alt="<?= $img['title']; ?>" width="<?= $img['width']; ?>" height="<?= $img['height']; ?>" loading="lazy">
+                <?php endif; ?>
             </div>
         </div>
     </div>

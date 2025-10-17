@@ -9,6 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly.
 }
 get_header();
+$img = get_field('welcome_image');
 ?>
 <main id="about-us-page-template-e82d05">
     <!-- Generic banner -->
@@ -18,7 +19,7 @@ get_header();
     <!-- Welcome about us content -->
     <section class="content-welcome">
         <div class="content-image">
-            <img src="<?= get_field('welcome_image')['url']; ?>" alt="<?= get_field('welcome_image')['title']; ?>">
+            <img src="<?= $img['url']; ?>" alt="<?= $img['title']; ?>" width="<?= $img['width']; ?>" height="<?= $img['height']; ?>" loading="lazy">
         </div>
         <div class="content-text">
             <h2 class="mb-4"><?= get_field('welcome_title'); ?></h2>

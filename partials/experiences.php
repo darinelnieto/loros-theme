@@ -20,10 +20,11 @@ $experiences = new WP_Query(array('post_type' => 'Experiences', 'post_status' =>
                         if($experiences->have_posts()){
                             while($experiences->have_posts()){
                                 $experiences->the_post();
+                                $img = get_field('feature_image', $experiences->ID);
                     ?>
                     <div class="experience">
                         <a href="<?= get_permalink(); ?>">
-                            <img src="<?= get_field('feature_image', $experiences->ID)['url']; ?>" alt="<?= get_field('feature_image', $experiences->ID)['title']; ?>">
+                            <img src="<?= $img['url']; ?>" alt="<?= $img['title']; ?>" width="<?= $img['width']; ?>" height="<?= $img['height'] ?>" loading="lazy">
                             <div class="name">
                                 <h3><?= the_title($experiences->ID); ?></h3>
                             </div>
