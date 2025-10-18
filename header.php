@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   <!-- End Google Tag Manager -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title><?php bloginfo('name'); ?> - <?php wp_title('|', true, 'right'); ?></title>
+  <title><?php wp_title('|', true, 'right'); ?></title>
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width">
