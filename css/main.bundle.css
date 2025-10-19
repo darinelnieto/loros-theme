@@ -1557,7 +1557,7 @@ footer .contact .email-content a {
 @media (max-width: 1280px) {
   #experiences-template-ff0b59 .experience .form-contain .form .content-form {
     padding: 0 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
     margin-top: 0 !important;
   }
 }
@@ -1578,6 +1578,11 @@ footer .contact .email-content a {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
+@media (max-width: 1280px) {
+  #experiences-template-ff0b59 .experience .form-contain .form .content-form .form-group label {
+    font-size: 0.9rem;
+  }
+}
 #experiences-template-ff0b59 .experience .form-contain .form .content-form .form-group input {
   width: 100%;
   background: white;
@@ -1586,6 +1591,11 @@ footer .contact .email-content a {
   padding-left: 10px;
   font-family: "Avenir-light";
   color: #939392;
+}
+@media (max-width: 1280px) {
+  #experiences-template-ff0b59 .experience .form-contain .form .content-form .form-group input {
+    font-size: 0.9rem;
+  }
 }
 #experiences-template-ff0b59 .experience .form-contain .form .content-form .content-politc label {
   display: flex;
@@ -1629,6 +1639,11 @@ footer .contact .email-content a {
 #experiences-template-ff0b59 .experience .form-contain .form .content-form .submit button:disabled {
   cursor: no-drop;
 }
+@media (max-width: 1280px) {
+  #experiences-template-ff0b59 .experience .form-contain .form .content-form .submit button {
+    font-size: 0.9rem;
+  }
+}
 #experiences-template-ff0b59 .experience .form-contain .form .content-form .wpcf7 form.sent .wpcf7-response-output {
   background: white;
   font-family: "Avenir-light";
@@ -1640,11 +1655,11 @@ footer .contact .email-content a {
 }
 @media (max-width: 1080px) {
   #experiences-template-ff0b59 .experience .form-contain .form h2 {
-    font-size: 2.7rem;
-    padding: 0 1.5rem;
+    font-size: 1.7rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
   }
   #experiences-template-ff0b59 .experience .form-contain .form h2 span {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 #experiences-template-ff0b59 .experience .form-contain .form.sticky {
@@ -1664,6 +1679,11 @@ footer .contact .email-content a {
 #experiences-template-ff0b59 .experience .form-contain .reviews .item {
   width: 25%;
   padding: 5%;
+}
+@media (max-width: 1280px) {
+  #experiences-template-ff0b59 .experience .form-contain .reviews .item {
+    padding: 1% 5%;
+  }
 }
 #experiences-template-ff0b59 .experience .form-contain .reviews .item img {
   width: 95%;
