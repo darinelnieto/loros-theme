@@ -43,34 +43,6 @@ add_action( 'init', 'ditto_navigation_menus' );
 add_theme_support( 'custom-logo' );
 
 /**
- * Login Styles
- */
-function ditto_login_styles() { ?>
-  <style type="text/css">
-    body {
-      background-color: #222 !important;
-    }
-    #login h1 a, .login h1 a {
-      display: none;
-    }
-    #login h1 img {
-      width: 100%;
-      max-width: 240px;
-      max-height: 180px;
-    }
-  </style>
-  <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function(event) { 
-      let loginImg = document.createElement("img");
-        loginImg.src = "<?= get_template_directory_uri() ?>/images/pipe-code-logo.svg";
-        loginImg.alt = "WordPress login image";
-        document.querySelector('#login h1').appendChild(loginImg);
-    });
-  </script>
-<?php }
-add_action( 'login_enqueue_scripts', 'ditto_login_styles' );
-
-/**
  * Install latest jQuery version 3.5.1
  */
 if (!is_admin()) {
@@ -97,6 +69,18 @@ function Experiences()
     'taxonomies'  => array('category'),
   );
   register_post_type('Experiences', $args);
+}
+// post type Technologies
+add_action('init', 'Logbook');
+function Logbook()
+{
+  $args = array(
+    'public' => true,
+    'label'  => 'Logbook',
+    'menu_icon' => 'dashicons-book',
+    'taxonomies'  => array('category'),
+  );
+  register_post_type('logbook', $args);
 }
 // options pages
 if (function_exists('acf_add_options_page')){
@@ -345,28 +329,3 @@ function relatos_list_handler($request){
   $relatos = ['relatos' => $relatos, 'total' => $total];
   return $relatos;
 }
-// Joinchat
-add_action('wp_footer', function() {
-    if ( function_exists('wpm_get_language') ) {
-        $lang = wpm_get_language();
-        if ($lang === 'es') {
-            // Botón en español
-            echo "<script>
-                window.joinchatSettings = {
-                    phone: '573206960469',
-                    message: 'Hola 👋, gracias por escribir a Loros Wildlife Sanctuary. ¿En qué podemos ayudarte? 🦜',
-                    buttonText: 'Chatea con nosotros'
-                };
-            </script>";
-        } elseif ($lang === 'en') {
-            // Botón en inglés
-            echo "<script>
-                window.joinchatSettings = {
-                    phone: '573206960469',
-                    message: 'Hi 👋, thanks for contacting Loros Wildlife Sanctuary. How can we help you? 🦜',
-                    buttonText: 'Chat with us'
-                };
-            </script>";
-        }
-    }
-});

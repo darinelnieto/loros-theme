@@ -35,6 +35,13 @@
                 "operator": "==",
                 "value": "experiences"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "logbook"
+            }
         ]
     ],
     "menu_order": 0,
@@ -46,5 +53,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1674698008
+    "display_title": "",
+    "modified": 1760961627
 }

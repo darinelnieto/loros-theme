@@ -936,6 +936,114 @@ footer .contact .email-content a {
   }
 }
 
+#archive-logbook-template-21efab {
+  padding-top: 6rem;
+  background: rgba(164, 164, 164, 0.3);
+}
+#archive-logbook-template-21efab .banner {
+  position: relative;
+  width: 100%;
+  height: 65vh;
+}
+#archive-logbook-template-21efab .banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#archive-logbook-template-21efab .banner .container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  z-index: 1;
+}
+#archive-logbook-template-21efab .banner .container h1 {
+  color: #ffffff;
+  font-family: "Gotham-Black";
+}
+#archive-logbook-template-21efab .banner .container p {
+  color: #ffffff;
+  font-family: "Avenir-light";
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+#archive-logbook-template-21efab .banner .container p strong {
+  font-family: "Gotham Book";
+}
+@media (max-width: 768px) {
+  #archive-logbook-template-21efab .banner .container {
+    top: inherit;
+    transform: translate(-50%, -30%);
+    bottom: 0;
+  }
+  #archive-logbook-template-21efab .banner .container p {
+    font-size: 1rem;
+  }
+}
+#archive-logbook-template-21efab .stories {
+  padding: 3rem 0;
+}
+#archive-logbook-template-21efab .stories .card-story {
+  text-decoration: none;
+}
+#archive-logbook-template-21efab .stories .card-story .card-posts {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  height: 100%;
+}
+#archive-logbook-template-21efab .stories .card-story .card-posts .image-contain {
+  width: 100%;
+  height: 200px;
+}
+#archive-logbook-template-21efab .stories .card-story .card-posts .image-contain img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#archive-logbook-template-21efab .stories .card-story .card-posts .text-contain {
+  padding: 10px;
+}
+#archive-logbook-template-21efab .stories .card-story .card-posts .text-contain .name-post {
+  font-size: 22px;
+  color: #797D23;
+  font-family: "Gotham-Black";
+}
+#archive-logbook-template-21efab .stories .card-story .card-posts .text-contain .description {
+  font-family: "Gotham Book";
+  color: #606060;
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+#archive-logbook-template-21efab .stories .card-story .card-posts .text-contain .label-text {
+  font-family: "Gotham Book";
+  color: #606060;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+#archive-logbook-template-21efab .stories .card-story .card-posts .text-contain .label-text strong {
+  font-family: "Gotham-Black";
+}
+#archive-logbook-template-21efab .stories .card-story .card-posts .text-contain .read-more-text {
+  margin-top: 10px;
+  color: #707070;
+  font-family: "Avenir-light";
+  font-size: 14px;
+  display: block;
+  text-align: right;
+  transition: 0.2s;
+}
+#archive-logbook-template-21efab .stories .card-story .card-posts:hover .text-contain .read-more-text {
+  color: #082808;
+}
+
 #stories-landing-template-48285e {
   padding-top: 6rem;
   background: rgba(164, 164, 164, 0.3);
@@ -1560,6 +1668,9 @@ footer .contact .email-content a {
     padding-bottom: 1rem;
     margin-top: 0 !important;
   }
+  #experiences-template-ff0b59 .experience .form-contain .form .content-form .form-group p {
+    margin-bottom: 0.7rem !important;
+  }
 }
 #experiences-template-ff0b59 .experience .form-contain .form .content-form .form-group {
   position: relative;
@@ -1641,7 +1752,7 @@ footer .contact .email-content a {
 }
 @media (max-width: 1280px) {
   #experiences-template-ff0b59 .experience .form-contain .form .content-form .submit button {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }
 #experiences-template-ff0b59 .experience .form-contain .form .content-form .wpcf7 form.sent .wpcf7-response-output {
@@ -1655,11 +1766,11 @@ footer .contact .email-content a {
 }
 @media (max-width: 1080px) {
   #experiences-template-ff0b59 .experience .form-contain .form h2 {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     padding: 1.5rem 1.5rem 0 1.5rem;
   }
   #experiences-template-ff0b59 .experience .form-contain .form h2 span {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 #experiences-template-ff0b59 .experience .form-contain .form.sticky {

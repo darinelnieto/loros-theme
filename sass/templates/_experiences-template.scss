@@ -83,39 +83,44 @@
                         padding: 0 1.5rem;
                         padding-bottom: 1rem;
                         margin-top: 0 !important;
+                        .form-group{
+                            p{
+                                margin-bottom: .7rem !important;
+                            }
+                        }
                     }
                     .form-group{
-                    position: relative;
-                    .wpcf7-not-valid-tip{
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                    }
-                    br{
-                        display: none;
-                    }
-                    label{
-                        font-family: 'Avenir-light';
-                        color: white;
-                        font-size: 1.2rem;
-                        margin-bottom: .5rem;
-                        @media(max-width: 1280px){
-                            font-size: .9rem;
+                        position: relative;
+                        .wpcf7-not-valid-tip{
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                        }
+                        br{
+                            display: none;
+                        }
+                        label{
+                            font-family: 'Avenir-light';
+                            color: white;
+                            font-size: 1.2rem;
+                            margin-bottom: .5rem;
+                            @media(max-width: 1280px){
+                                font-size: .9rem;
+                            }
+                        }
+                        input{
+                            width: 100%;
+                            background: white;
+                            border:2px solid #939392;
+                            outline: none;
+                            padding-left: 10px;
+                            font-family: 'Avenir-light';
+                            color: #939392;
+                            @media(max-width: 1280px){
+                                font-size: .9rem;
+                            }
                         }
                     }
-                    input{
-                        width: 100%;
-                        background: white;
-                        border:2px solid #939392;
-                        outline: none;
-                        padding-left: 10px;
-                        font-family: 'Avenir-light';
-                        color: #939392;
-                        @media(max-width: 1280px){
-                            font-size: .9rem;
-                        }
-                    }
-                }
                 .content-politc{
                     label{
                         display: flex;
@@ -161,7 +166,7 @@
                             cursor: no-drop;
                         }
                         @media(max-width: 1280px){
-                            font-size: .9rem;
+                            font-size: .7rem;
                         }
                     }
                 }
@@ -175,10 +180,10 @@
                 }
                 @media(max-width:1080px){
                     h2{
-                        font-size: 1.7rem;
+                        font-size: 1.2rem;
                         padding: 1.5rem 1.5rem 0 1.5rem;
                         span{
-                            font-size: 1.2rem;
+                            font-size: 1rem;
                         }
                     }
                 }

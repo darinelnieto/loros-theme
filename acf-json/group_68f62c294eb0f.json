@@ -1,13 +1,13 @@
 {
-    "key": "group_63c627c269aaa",
-    "title": "Experiences content",
+    "key": "group_68f62c294eb0f",
+    "title": "Shortdescription logbook",
     "fields": [
         {
-            "key": "field_63c628171d1a8",
-            "label": "Pdf download",
-            "name": "pdf_download",
+            "key": "field_68f62c29f3d3a",
+            "label": "Shortdescription",
+            "name": "shortdescription",
             "aria-label": "",
-            "type": "file",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,21 +16,15 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "url",
-            "library": "all",
-            "min_size": "",
-            "max_size": "",
-            "mime_types": ""
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
         }
     ],
     "location": [
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "experiences"
-            }
-        ],
         [
             {
                 "param": "post_type",
@@ -39,7 +33,7 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 1,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -49,5 +43,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1760961656
+    "modified": 1760963858
 }

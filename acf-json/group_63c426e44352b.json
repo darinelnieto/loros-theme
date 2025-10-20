@@ -59,6 +59,13 @@
                 "operator": "==",
                 "value": "templates\/what-to-do-page-template.php"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "logbook"
+            }
         ]
     ],
     "menu_order": 0,
@@ -70,5 +77,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1675612405
+    "display_title": "",
+    "modified": 1760961693
 }

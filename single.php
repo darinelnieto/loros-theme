@@ -18,5 +18,8 @@ switch ($posttype) {
 	case 'relato':
 		get_template_part('templates/single-strory-template');
 	break;
+	case 'logbook':
+		get_template_part('templates/experiences-template');
+	break;
 }
 ?>
