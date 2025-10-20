@@ -2,7 +2,7 @@
     "post_types": {
         "experiences": [],
         "relato": [],
-        "ogbook": []
+        "logbook": []
     },
     "taxonomies": {
         "category": [],
