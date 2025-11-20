@@ -66,6 +66,13 @@
                 "operator": "==",
                 "value": "logbook"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "donate"
+            }
         ]
     ],
     "menu_order": 0,
@@ -78,5 +85,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1760961693
+    "modified": 1763407094
 }

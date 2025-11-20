@@ -12,6 +12,7 @@ get_header();
 $pdf = get_field('pdf_download');
 $gallery = get_field('gallery_image');
 $reviews = get_field('reviews', 'option');
+$posttype = get_post_type();
 ?>
 <main id="experiences-template-ff0b59">
     <!-- Experience content -->
@@ -42,7 +43,16 @@ $reviews = get_field('reviews', 'option');
                 <div class="col-12 col-md-5 col-lg-4">
                     <div class="form-contain">
                         <div class="form">
-                            <h2><?= get_field('title_form', 'option'); ?></h2>
+                            <h2>
+                                <?php 
+                                    if($posttype === 'donate'){
+                                        echo get_field('title_form_donate', 'option');
+                                    }else{
+                                        echo get_field('title_form', 'option'); 
+                                    }
+                                    
+                                ?>
+                            </h2>
                             <div class="content-form mt-4">
                                 <?= do_shortcode(get_field('shortcode_form', 'option')); ?>
                             </div>

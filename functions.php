@@ -82,6 +82,17 @@ function Logbook()
   );
   register_post_type('logbook', $args);
 }
+// Donate post type
+add_action('init', 'Donate_posts');
+function Donate_posts(){
+  $args = array(
+    'public' => true,
+    'label' => 'Donate',
+    'menu_icon' => 'dashicons-money-alt',
+    'taxonomies' => array('category')
+  );
+  register_post_type('donate', $args);
+}
 // options pages
 if (function_exists('acf_add_options_page')){
 	acf_add_options_page(array(

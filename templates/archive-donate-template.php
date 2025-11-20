@@ -2,18 +2,18 @@
 <?php
 /**
  * 
- * Template Name: archive-logbook
+ * Template Name: archive-donate
  * 
  */
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly.
 }
 get_header();
-$experiences = new WP_Query(array('post_type' => 'logbook', 'post_status' => 'publish', 'posts_per_page' => -1, 'order' => 'desc'));
+$experiences = new WP_Query(array('post_type' => 'donate', 'post_status' => 'publish', 'posts_per_page' => -1, 'order' => 'desc'));
 $banner = get_field('banner_image');
 $text = get_field('text_after_title');
 ?>
-<main id="archive-logbook-template-21efab">
+<main id="archive-donate-template-220031">
     <section class="banner">
         <img src="<?= $banner['url']; ?>" alt="<?= $banner['title']; ?>" class="banner" loading="lazy">
         <div class="container">

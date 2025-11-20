@@ -23,6 +23,27 @@
             "new_lines": "br"
         },
         {
+            "key": "field_691efee34c2b1",
+            "label": "Title form donate",
+            "name": "title_form_donate",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "rows": 2,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
             "key": "field_63c629e748a04",
             "label": "Shortcode form",
             "name": "shortcode_form",
@@ -185,5 +206,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1760700601
+    "modified": 1763639076
 }
