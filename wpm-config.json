@@ -2,7 +2,8 @@
     "post_types": {
         "experiences": [],
         "relato": [],
-        "logbook": []
+        "logbook": [],
+        "donate":[]
     },
     "taxonomies": {
         "category": [],

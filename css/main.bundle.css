@@ -1793,10 +1793,10 @@ footer .contact .email-content a {
 #experiences-template-ff0b59 .experience .form-contain {
   position: relative;
 }
-#experiences-template-ff0b59 .experience .form-contain .form {
+#experiences-template-ff0b59 .experience .form-contain .form .form-contain {
   background: #797D23;
 }
-#experiences-template-ff0b59 .experience .form-contain .form h2 {
+#experiences-template-ff0b59 .experience .form-contain .form .form-contain h2 {
   color: white;
   font-family: "Gotham-Black";
   font-size: 2.5rem;
@@ -1804,56 +1804,56 @@ footer .contact .email-content a {
   padding: 0 3.5rem;
   padding-top: 1.5rem;
 }
-#experiences-template-ff0b59 .experience .form-contain .form h2 span {
+#experiences-template-ff0b59 .experience .form-contain .form .form-contain h2 span {
   font-size: 1.8rem;
 }
 @media (max-width: 1280px) {
-  #experiences-template-ff0b59 .experience .form-contain .form h2 {
+  #experiences-template-ff0b59 .experience .form-contain .form .form-contain h2 {
     padding: 0 1.5rem;
     padding-top: 0.5rem;
     font-size: 2.5rem;
   }
-  #experiences-template-ff0b59 .experience .form-contain .form h2 span {
+  #experiences-template-ff0b59 .experience .form-contain .form .form-contain h2 span {
     font-size: 1.5rem;
   }
 }
-#experiences-template-ff0b59 .experience .form-contain .form .content-form {
+#experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form {
   padding: 0 3.5rem;
   padding-bottom: 1.5rem;
 }
 @media (max-width: 1280px) {
-  #experiences-template-ff0b59 .experience .form-contain .form .content-form {
+  #experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form {
     padding: 0 1.5rem;
     padding-bottom: 1rem;
     margin-top: 0 !important;
   }
-  #experiences-template-ff0b59 .experience .form-contain .form .content-form .form-group p {
+  #experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form .form-group p {
     margin-bottom: 0.7rem !important;
   }
 }
-#experiences-template-ff0b59 .experience .form-contain .form .content-form .form-group {
+#experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form .form-group {
   position: relative;
 }
-#experiences-template-ff0b59 .experience .form-contain .form .content-form .form-group .wpcf7-not-valid-tip {
+#experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form .form-group .wpcf7-not-valid-tip {
   position: absolute;
   top: 0;
   right: 0;
 }
-#experiences-template-ff0b59 .experience .form-contain .form .content-form .form-group br {
+#experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form .form-group br {
   display: none;
 }
-#experiences-template-ff0b59 .experience .form-contain .form .content-form .form-group label {
+#experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form .form-group label {
   font-family: "Avenir-light";
   color: white;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 @media (max-width: 1280px) {
-  #experiences-template-ff0b59 .experience .form-contain .form .content-form .form-group label {
+  #experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form .form-group label {
     font-size: 0.9rem;
   }
 }
-#experiences-template-ff0b59 .experience .form-contain .form .content-form .form-group input {
+#experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form .form-group input {
   width: 100%;
   background: white;
   border: 2px solid #939392;
@@ -1863,19 +1863,19 @@ footer .contact .email-content a {
   color: #939392;
 }
 @media (max-width: 1280px) {
-  #experiences-template-ff0b59 .experience .form-contain .form .content-form .form-group input {
+  #experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form .form-group input {
     font-size: 0.9rem;
   }
 }
-#experiences-template-ff0b59 .experience .form-contain .form .content-form .content-politc label {
+#experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form .content-politc label {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-#experiences-template-ff0b59 .experience .form-contain .form .content-form .content-politc label br, #experiences-template-ff0b59 .experience .form-contain .form .content-form .content-politc label .wpcf7-form-control-wrap {
+#experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form .content-politc label br, #experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form .content-politc label .wpcf7-form-control-wrap {
   display: none;
 }
-#experiences-template-ff0b59 .experience .form-contain .form .content-form .content-politc label .anima-check {
+#experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form .content-politc label .anima-check {
   display: block;
   width: 15px;
   height: 15px;
@@ -1885,18 +1885,18 @@ footer .contact .email-content a {
   border-radius: 50%;
   transition: 0.2s;
 }
-#experiences-template-ff0b59 .experience .form-contain .form .content-form .content-politc label .anima-check.active {
+#experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form .content-politc label .anima-check.active {
   background: #1D1D1B;
 }
-#experiences-template-ff0b59 .experience .form-contain .form .content-form .content-politc label .text {
+#experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form .content-politc label .text {
   font-family: "Avenir-light";
   color: white;
   font-size: 0.8rem;
 }
-#experiences-template-ff0b59 .experience .form-contain .form .content-form .content-politc label .text a {
+#experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form .content-politc label .text a {
   color: white;
 }
-#experiences-template-ff0b59 .experience .form-contain .form .content-form .submit button {
+#experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form .submit button {
   opacity: 0;
   background: #F6D467;
   outline: none;
@@ -1906,29 +1906,29 @@ footer .contact .email-content a {
   text-transform: uppercase;
   padding: 4px 20px;
 }
-#experiences-template-ff0b59 .experience .form-contain .form .content-form .submit button:disabled {
+#experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form .submit button:disabled {
   cursor: no-drop;
 }
 @media (max-width: 1280px) {
-  #experiences-template-ff0b59 .experience .form-contain .form .content-form .submit button {
+  #experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form .submit button {
     font-size: 0.7rem;
   }
 }
-#experiences-template-ff0b59 .experience .form-contain .form .content-form .wpcf7 form.sent .wpcf7-response-output {
+#experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form .wpcf7 form.sent .wpcf7-response-output {
   background: white;
   font-family: "Avenir-light";
 }
 @media (max-width: 768px) {
-  #experiences-template-ff0b59 .experience .form-contain .form .content-form {
+  #experiences-template-ff0b59 .experience .form-contain .form .form-contain .content-form {
     margin-bottom: 3rem;
   }
 }
 @media (max-width: 1080px) {
-  #experiences-template-ff0b59 .experience .form-contain .form h2 {
+  #experiences-template-ff0b59 .experience .form-contain .form .form-contain h2 {
     font-size: 1.2rem;
     padding: 1.5rem 1.5rem 0 1.5rem;
   }
-  #experiences-template-ff0b59 .experience .form-contain .form h2 span {
+  #experiences-template-ff0b59 .experience .form-contain .form .form-contain h2 span {
     font-size: 1rem;
   }
 }

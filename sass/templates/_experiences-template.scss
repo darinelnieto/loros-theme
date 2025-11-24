@@ -56,134 +56,136 @@
         .form-contain{
             position: relative;
             .form{
-                background: #797D23;
-                h2{
-                    color: white;
-                    font-family: 'Gotham-Black';
-                    font-size: 2.5rem;
-                    line-height: .8;
-                    padding: 0 3.5rem;
-                    padding-top: 1.5rem;
-                    span{
-                        font-size: 1.8rem;
-                    }
-                    @media(max-width:1280px){
-                        padding: 0 1.5rem;
-                        padding-top: 0.5rem;
-                        font-size: 2.5rem;
-                        span{
-                            font-size: 1.5rem;
-                        }
-                    }
-                }
-                .content-form{
-                    padding: 0 3.5rem;
-                    padding-bottom: 1.5rem;
-                    @media(max-width:1280px){
-                        padding: 0 1.5rem;
-                        padding-bottom: 1rem;
-                        margin-top: 0 !important;
-                        .form-group{
-                            p{
-                                margin-bottom: .7rem !important;
-                            }
-                        }
-                    }
-                    .form-group{
-                        position: relative;
-                        .wpcf7-not-valid-tip{
-                            position: absolute;
-                            top: 0;
-                            right: 0;
-                        }
-                        br{
-                            display: none;
-                        }
-                        label{
-                            font-family: 'Avenir-light';
-                            color: white;
-                            font-size: 1.2rem;
-                            margin-bottom: .5rem;
-                            @media(max-width: 1280px){
-                                font-size: .9rem;
-                            }
-                        }
-                        input{
-                            width: 100%;
-                            background: white;
-                            border:2px solid #939392;
-                            outline: none;
-                            padding-left: 10px;
-                            font-family: 'Avenir-light';
-                            color: #939392;
-                            @media(max-width: 1280px){
-                                font-size: .9rem;
-                            }
-                        }
-                    }
-                .content-politc{
-                    label{
-                        display: flex;
-                        align-items: center;
-                        cursor: pointer;
-                        br, .wpcf7-form-control-wrap{
-                            display: none;
-                        }
-                        .anima-check{
-                            display: block;
-                            width: 15px;
-                            height: 15px;
-                            background: transparent;
-                            border: 2px solid white;
-                            margin-right: 10px;
-                            border-radius: 50%;
-                            transition: .2s;
-                        }
-                        .anima-check.active{
-                            background: #1D1D1B;
-                        }
-                        .text{
-                            font-family: 'Avenir-light';
-                            color: white;
-                            font-size: .8rem;
-                            a{
-                                color: white;
-                            }
-                        }
-                    }
-                }
-                .submit{
-                    button{
-                        opacity: 0;
-                        background: #F6D467;
-                        outline: none;
-                        border:1px solid #1D1D1B;
-                        color: #1D1D1B;
-                        font-family: 'Avenir-medium';
-                        text-transform: uppercase;
-                        padding: 4px 20px;
-                        &:disabled{
-                            cursor: no-drop;
-                        }
-                        @media(max-width: 1280px){
-                            font-size: .7rem;
-                        }
-                    }
-                }
-                .wpcf7 form.sent .wpcf7-response-output{
-                    background: white;
-                    font-family: 'Avenir-light';
-                }
-                    @media(max-width:768px){
-                        margin-bottom: 3rem;
-                    }
-                }
-                @media(max-width:1080px){
+                .form-contain{
+                    background: #797D23;
                     h2{
-                        font-size: 1.2rem;
-                        padding: 1.5rem 1.5rem 0 1.5rem;
+                        color: white;
+                        font-family: 'Gotham-Black';
+                        font-size: 2.5rem;
+                        line-height: .8;
+                        padding: 0 3.5rem;
+                        padding-top: 1.5rem;
                         span{
-                            font-size: 1rem;
+                            font-size: 1.8rem;
+                        }
+                        @media(max-width:1280px){
+                            padding: 0 1.5rem;
+                            padding-top: 0.5rem;
+                            font-size: 2.5rem;
+                            span{
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                    .content-form{
+                        padding: 0 3.5rem;
+                        padding-bottom: 1.5rem;
+                        @media(max-width:1280px){
+                            padding: 0 1.5rem;
+                            padding-bottom: 1rem;
+                            margin-top: 0 !important;
+                            .form-group{
+                                p{
+                                    margin-bottom: .7rem !important;
+                                }
+                            }
+                        }
+                        .form-group{
+                            position: relative;
+                            .wpcf7-not-valid-tip{
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                            }
+                            br{
+                                display: none;
+                            }
+                            label{
+                                font-family: 'Avenir-light';
+                                color: white;
+                                font-size: 1.2rem;
+                                margin-bottom: .5rem;
+                                @media(max-width: 1280px){
+                                    font-size: .9rem;
+                                }
+                            }
+                            input{
+                                width: 100%;
+                                background: white;
+                                border:2px solid #939392;
+                                outline: none;
+                                padding-left: 10px;
+                                font-family: 'Avenir-light';
+                                color: #939392;
+                                @media(max-width: 1280px){
+                                    font-size: .9rem;
+                                }
+                            }
+                        }
+                    .content-politc{
+                        label{
+                            display: flex;
+                            align-items: center;
+                            cursor: pointer;
+                            br, .wpcf7-form-control-wrap{
+                                display: none;
+                            }
+                            .anima-check{
+                                display: block;
+                                width: 15px;
+                                height: 15px;
+                                background: transparent;
+                                border: 2px solid white;
+                                margin-right: 10px;
+                                border-radius: 50%;
+                                transition: .2s;
+                            }
+                            .anima-check.active{
+                                background: #1D1D1B;
+                            }
+                            .text{
+                                font-family: 'Avenir-light';
+                                color: white;
+                                font-size: .8rem;
+                                a{
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                    .submit{
+                        button{
+                            opacity: 0;
+                            background: #F6D467;
+                            outline: none;
+                            border:1px solid #1D1D1B;
+                            color: #1D1D1B;
+                            font-family: 'Avenir-medium';
+                            text-transform: uppercase;
+                            padding: 4px 20px;
+                            &:disabled{
+                                cursor: no-drop;
+                            }
+                            @media(max-width: 1280px){
+                                font-size: .7rem;
+                            }
+                        }
+                    }
+                    .wpcf7 form.sent .wpcf7-response-output{
+                        background: white;
+                        font-family: 'Avenir-light';
+                    }
+                        @media(max-width:768px){
+                            margin-bottom: 3rem;
+                        }
+                    }
+                    @media(max-width:1080px){
+                        h2{
+                            font-size: 1.2rem;
+                            padding: 1.5rem 1.5rem 0 1.5rem;
+                            span{
+                                font-size: 1rem;
+                            }
                         }
                     }
                 }

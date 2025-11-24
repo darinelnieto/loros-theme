@@ -3,6 +3,24 @@
     "title": "General experiences",
     "fields": [
         {
+            "key": "field_69243bffff2d0",
+            "label": "Experiences",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
             "key": "field_63c629b56cfb4",
             "label": "Title form",
             "name": "title_form",
@@ -18,27 +36,6 @@
             },
             "default_value": "",
             "maxlength": "",
-            "rows": 2,
-            "placeholder": "",
-            "new_lines": "br"
-        },
-        {
-            "key": "field_691efee34c2b1",
-            "label": "Title form donate",
-            "name": "title_form_donate",
-            "aria-label": "",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "allow_in_bindings": 1,
             "rows": 2,
             "placeholder": "",
             "new_lines": "br"
@@ -185,6 +182,66 @@
                     "parent_repeater": "field_68f0d447f4208"
                 }
             ]
+        },
+        {
+            "key": "field_69243be9ff2cf",
+            "label": "Donate",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_691efee34c2b1",
+            "label": "Title form donate",
+            "name": "title_form_donate",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "rows": 2,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_69243b7a0605a",
+            "label": "Donate shortcode form",
+            "name": "donate_shortcode_form",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -206,5 +263,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1763639076
+    "modified": 1763982469
 }

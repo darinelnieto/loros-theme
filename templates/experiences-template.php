@@ -43,21 +43,29 @@ $posttype = get_post_type();
                 <div class="col-12 col-md-5 col-lg-4">
                     <div class="form-contain">
                         <div class="form">
-                            <h2>
-                                <?php 
-                                    if($posttype === 'donate'){
-                                        echo get_field('title_form_donate', 'option');
-                                    }else{
-                                        echo get_field('title_form', 'option'); 
-                                    }
-                                    
-                                ?>
-                            </h2>
-                            <div class="content-form mt-4">
-                                <?= do_shortcode(get_field('shortcode_form', 'option')); ?>
+                            <div class="form-contain">
+                                <h2>
+                                    <?php 
+                                        if($posttype === 'donate'){
+                                            echo get_field('title_form_donate', 'option');
+                                        }else{
+                                            echo get_field('title_form', 'option'); 
+                                        }
+                                        
+                                    ?>
+                                </h2>
+                                <div class="content-form mt-4">
+                                    <?php
+                                        if($posttype === 'donate'){
+                                            echo do_shortcode(get_field('donate_shortcode_form', 'option'));
+                                        }else{
+                                            echo do_shortcode(get_field('shortcode_form', 'option'));
+                                        }
+                                    ?>
+                                </div>
                             </div>
                             <?php if(!empty($reviews)): ?>
-                                <div class="reviews">
+                                <div class="reviews" <?php if($posttype === 'donate'): ?>style="opacity:0;"<?php endif; ?>>
                                     <?php foreach($reviews as $item): $img = $item['logo']; ?>
                                         <div class="item">
                                             <?php if(!empty($img)): ?>
