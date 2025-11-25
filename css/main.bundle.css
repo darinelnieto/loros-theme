@@ -58,32 +58,32 @@ footer {
   background: #082808;
   padding: 3rem 0;
 }
-footer .menu-menu-1-container {
+footer .menu-footer-container {
   text-align: right;
 }
-footer .menu-menu-1-container ul {
+footer .menu-footer-container ul {
   list-style: none;
   padding: 0 13% 0 0;
   margin: 0;
 }
-footer .menu-menu-1-container ul li a {
+footer .menu-footer-container ul li a {
   color: white;
   text-decoration: none;
   font-family: "Gotham Book";
   transition: 0.2s;
   font-size: 1.3rem;
 }
-footer .menu-menu-1-container ul li a:hover {
+footer .menu-footer-container ul li a:hover {
   color: #AAAA1B;
 }
-footer .menu-menu-1-container ul li a.active {
+footer .menu-footer-container ul li a.active {
   color: #AAAA1B;
 }
-footer .menu-menu-1-container ul li:last-child {
+footer .menu-footer-container ul li:last-child {
   display: none;
 }
 @media (max-width: 768px) {
-  footer .menu-menu-1-container ul {
+  footer .menu-footer-container ul {
     text-align: center;
     padding: 0;
   }

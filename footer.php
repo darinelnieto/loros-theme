@@ -18,8 +18,8 @@ $email = get_field('email_content', 'option');
             <div class="col-12 col-md-4">
                 <?php 
                     wp_nav_menu([
-                        'menu'            => 'Menu 1',
-                        'theme_location'  => 'Menu 1',
+                        'menu'            => 'Footer',
+                        'theme_location'  => 'Footer',
                         'container'       => 'div',
                         'menu_class'      => 'main-menu-list',
                     ]);
