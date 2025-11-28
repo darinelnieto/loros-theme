@@ -893,6 +893,23 @@ footer .contact .email-content a {
 .content-header-partial-60affd .menu-movil ul li a.active {
   color: #082808;
 }
+.content-header-partial-60affd .menu-movil ul .donate-cta a {
+  display: flex;
+  align-items: center;
+  background: #fad867;
+  color: #082808;
+  border-radius: 4px;
+  padding: 5px 10px;
+  transition: all;
+}
+.content-header-partial-60affd .menu-movil ul .donate-cta a:hover {
+  background: #ffffff;
+  color: #082808;
+}
+.content-header-partial-60affd .menu-movil ul .donate-cta a.active {
+  background: #ffffff;
+  color: #082808;
+}
 @media (max-width: 1020px) {
   .content-header-partial-60affd .menu-movil {
     display: none;

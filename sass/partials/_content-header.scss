@@ -79,6 +79,25 @@
                     color: #082808;
                 }
             }
+            .donate-cta{
+                a{
+                    display: flex;
+                    align-items:center;
+                    background:#fad867;
+                    color: #082808;
+                    border-radius: 4px;
+                    padding: 5px 10px;
+                    transition: all;
+                    &:hover{
+                        background: #ffffff;
+                        color: #082808;
+                    }
+                }
+                a.active{
+                    background: #ffffff;
+                    color: #082808;
+                }
+            }
         }
         @media(max-width:1020px){
             display: none;
